@@ -1,0 +1,73 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: biman
+  Date: 5/18/2023
+  Time: 9:20 AM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Boho Rent</title>
+    <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/css/style.css"/>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="div-left">
+                <ul class="ul-left">
+                    <li><a href="">TikTok</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="div-mid">
+                <a class="logo" href="">
+                    <h3>BOHO<br>RENT</h3>
+                </a>
+            </div>
+            <div class="div-right">
+                <ul class="ul-right">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Bohimia Packages</a></li>
+                    <li><a href="">Inventory</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main-body">
+        <div class="video-box">
+            <div class="video-text">
+                <h1>BOHO<br>RENT</h1>
+                <h3>Make your event impossible to forget!</h3>
+                <h2>FOR INDOORS & OUTDOORS<br>FOR ALL SEASONS!</h2>
+            </div>
+            <div class="video">
+                <video src="resourses/video2.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+        <div class="img-box1">
+            <div class="text-box1-bg">
+                <div class="text">
+                    <p>Boho Rent brings out bohemia rustic style with luxurious touch, we are here to provide you with a setup to have a happy and memorable event. Take a look at our packages and see what fits your event the best! Let us be part of your special event with a rustic finish.</p>
+                    <a href="" class="contact-us">Contact Us</a>
+                </div>
+            </div>
+            <div class="faid-box"></div>
+            <img src="resourses/image.png" alt="">
+        </div>
+        <div class="img-box2">
+            <img src="resourses/image1.png" alt="">
+            <img src="resourses/image2.png" alt="">
+            <img src="resourses/image3.png" alt="">
+            <img src="resourses/image4.png" alt="">
+            <a href="">Boho Packages</a>
+        </div>
+    </div>
+    <footer class="main-footer">
+
+    </footer>
+</body>
+</html>

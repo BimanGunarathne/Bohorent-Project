@@ -9,6 +9,8 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/css/login.css"/>
 </head>
 <body>
 

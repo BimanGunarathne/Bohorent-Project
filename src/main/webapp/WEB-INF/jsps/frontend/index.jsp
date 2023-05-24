@@ -14,20 +14,21 @@
 </head>
 <body>
     <header>
-        <nav class="main-nav">
-            <div class="div-left">
-                <ul class="ul-left">
+        <nav class="mainnav">
+            <div class="divleft">
+                <ul class="ulleft">
                     <li><a href="">TikTok</a></li>
                     <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
                 </ul>
             </div>
-            <div class="div-mid">
+            <div class="divmid">
                 <a class="logo" href="">
                     <h3>BOHO<br>RENT</h3>
                 </a>
             </div>
-            <div class="div-right">
-                <ul class="ul-right">
+            <div class="divright">
+                <ul class="ulright">
                     <li><a href="">Home</a></li>
                     <li><a href="">Bohimia Packages</a></li>
                     <li><a href="">Inventory</a></li>
@@ -37,9 +38,9 @@
             </div>
         </nav>
     </header>
-    <div class="main-body">
-        <div class="video-box">
-            <div class="video-text">
+    <div class="mainbody">
+        <div class="videobox">
+            <div class="videotext">
                 <h1>BOHO<br>RENT</h1>
                 <h3>Make your event impossible to forget!</h3>
                 <h2>FOR INDOORS & OUTDOORS<br>FOR ALL SEASONS!</h2>
@@ -48,17 +49,16 @@
                 <video src="resourses/video2.mp4" autoplay loop muted></video>
             </div>
         </div>
-        <div class="img-box1">
-            <div class="text-box1-bg">
-                <div class="text">
-                    <p>Boho Rent brings out bohemia rustic style with luxurious touch, we are here to provide you with a setup to have a happy and memorable event. Take a look at our packages and see what fits your event the best! Let us be part of your special event with a rustic finish.</p>
-                    <a href="" class="contact-us">Contact Us</a>
-                </div>
+        <div class="imgbox1">
+            <div class="textbox">
+                <p>Boho Rent brings out bohemia rustic style with luxurious touch, we are here to provide you with a setup to have a happy and memorable event. Take a look at our packages and see what fits your event the best! Let us be part of your special event with a rustic finish.</p>
+                <a href="" class="contact-us">Contact Us</a>
             </div>
-            <div class="faid-box"></div>
-            <img src="resourses/image.png" alt="">
+            <div class="imgbox">
+                <img class="mainimg" src="resourses/image.png" alt="">
+            </div>
         </div>
-        <div class="img-box2">
+        <div class="imgbox2">
             <img src="resourses/image1.png" alt="">
             <img src="resourses/image2.png" alt="">
             <img src="resourses/image3.png" alt="">
@@ -66,7 +66,7 @@
             <a href="">Boho Packages</a>
         </div>
     </div>
-    <footer class="main-footer">
+    <footer class="mainfooter">
 
     </footer>
 </body>

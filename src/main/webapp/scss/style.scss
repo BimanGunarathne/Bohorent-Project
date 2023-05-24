@@ -118,29 +118,33 @@
     height: auto;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr auto;
+    flex-direction: revert;
     .textbox{
       top: 0;
       left: 0;
       position: absolute;
-      width: 450px;
-      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      height: 100vh;
       font-size: 25px;
       padding: 50px;
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(0, 0, 0, 0.3);
       align-items: center;
-      text-align: center;
-      grid-column-start: 2;
+      text-align: left;
       p{
         padding-bottom: 4vh;
+        color: #ffffff;
       }
       a{
         text-decoration: none;
         width: 150px;
-        height: 100px;
+        height: 60px;
         padding: 15px;
-        border-radius: 15px;
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
         background: #7D9F90;
         color: #ffffff;
       }

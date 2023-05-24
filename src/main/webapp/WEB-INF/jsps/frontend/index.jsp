@@ -58,13 +58,13 @@
                 <img class="mainimg" src="resourses/image.png" alt="">
             </div>
         </div>
-        <div class="imgbox2">
-            <img src="resourses/image1.png" alt="">
-            <img src="resourses/image2.png" alt="">
-            <img src="resourses/image3.png" alt="">
-            <img src="resourses/image4.png" alt="">
-            <a href="">Boho Packages</a>
-        </div>
+<%--        <div class="imgbox2">--%>
+<%--            <img src="resourses/image1.png" alt="">--%>
+<%--            <img src="resourses/image2.png" alt="">--%>
+<%--            <img src="resourses/image3.png" alt="">--%>
+<%--            <img src="resourses/image4.png" alt="">--%>
+<%--            <a href="">Boho Packages</a>--%>
+<%--        </div>--%>
     </div>
     <footer class="mainfooter">
 

@@ -117,14 +117,12 @@
     width: 100%;
     height: auto;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr auto;
     .textbox{
       top: 0;
       left: 0;
       position: absolute;
-      display: block;
       width: 450px;
       height: 450px;
       font-size: 25px;
@@ -133,6 +131,7 @@
       background: rgba(255, 255, 255, 0.8);
       align-items: center;
       text-align: center;
+      grid-column-start: 2;
       p{
         padding-bottom: 4vh;
       }

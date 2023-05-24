@@ -13,6 +13,19 @@
     <link rel="stylesheet" type="text/css" href="scss/css/login.css"/>
 </head>
 <body>
+    <div class="mainsection">
+        <div class="logodiv">
+            <h1>BOHO<br>RENT</h1>
+        </div>
+        <div class="loginbox">
 
+        </div>
+        <div class="maindivbox">
+            <div class="bacground">
+                <img src="resourses/image1.png">
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

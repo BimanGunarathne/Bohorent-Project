@@ -2,6 +2,7 @@ package com.bohorent.shop.config;
 
 import com.bohorent.shop.controllers.HomeController;
 import com.bohorent.shop.controllers.LoginController;
+import com.bohorent.shop.controllers.RegisterController;
 import org.baswell.routes.RoutesFilter;
 import org.baswell.routes.RoutingTable;
 
@@ -18,6 +19,7 @@ public class RoutConfig extends RoutesFilter {
         routing
                 .add(new HomeController())
                 .add(new LoginController())
+                .add(new RegisterController())
                 .build();
     }
 }

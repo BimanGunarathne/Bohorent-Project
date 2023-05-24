@@ -14,11 +14,20 @@
 </head>
 <body>
     <div class="mainsection">
-        <div class="logodiv">
-            <h1>BOHO<br>RENT</h1>
-        </div>
-        <div class="loginbox">
-
+        <div class="loginmaindivbox">
+            <div class="loginbox">
+                <div class="loginitem">
+                    <h1>Login</h1>
+                    <form action="" method="post">
+                        <input class="email" type="text" placeholder="Username">
+                        <input class="password" type="password" placeholder="Password">
+                        <input class="check-box" id="check-box" type="checkbox">
+<%--                        <label for="check-box">Show password</label>--%>
+                        <input class="button" type="submit" value="Login">
+                        <input class="button" type="submit" value="Signup">
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="maindivbox">
             <div class="bacground">

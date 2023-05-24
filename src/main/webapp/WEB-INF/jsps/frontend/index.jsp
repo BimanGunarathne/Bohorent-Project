@@ -50,9 +50,11 @@
             </div>
         </div>
         <div class="imgbox1">
-            <div class="textbox">
-                <p>Boho Rent brings out bohemia rustic style with luxurious touch, we are here to provide you with a setup to have a happy and memorable event. Take a look at our packages and see what fits your event the best! Let us be part of your special event with a rustic finish.</p>
-                <a href="" class="contact-us">Contact Us</a>
+            <div class="divbox">
+                <div class="textbox">
+                    <p>Boho Rent brings out bohemia rustic style with luxurious touch, we are here to provide you with a setup to have a happy and memorable event. Take a look at our packages and see what fits your event the best! Let us be part of your special event with a rustic finish.</p>
+                    <a href="" class="contact-us">Contact Us</a>
+                </div>
             </div>
             <div class="imgbox">
                 <img class="mainimg" src="resourses/image.png" alt="">

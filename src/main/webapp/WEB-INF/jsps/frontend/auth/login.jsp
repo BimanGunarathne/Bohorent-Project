@@ -21,10 +21,12 @@
                     <form action="" method="post">
                         <input class="email" type="text" placeholder="Username">
                         <input class="password" type="password" placeholder="Password">
-                        <input class="check-box" id="check-box" type="checkbox">
-<%--                        <label for="check-box">Show password</label>--%>
-                        <input class="button" type="submit" value="Login">
-                        <input class="button" type="submit" value="Signup">
+                        <div class="checkbox">
+                            <input class="check-box" type="checkbox" id="myCheckbox">
+                            <label for="myCheckbox">Show password</label>
+                        </div>
+                        <input class="button button1" type="submit" value="Login">
+                        <input class="button button2" type="submit" value="Signup">
                     </form>
                 </div>
             </div>

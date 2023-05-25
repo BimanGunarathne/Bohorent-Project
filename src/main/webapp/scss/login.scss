@@ -39,21 +39,43 @@
           flex-direction: column;
           input{
             height: 5vh;
-            margin-bottom: 25px;
             font-size: 15px;
           }
           .email{
             padding-left: 20px;
+            margin-bottom: 25px;
           }
           .password{
             padding-left: 20px;
           }
-          .check-box{
-            width: 20px;
-            height: 20px;
+          .checkbox{
+            display: flex;
+            align-items: center;
+            .check-box[type="checkbox"]{
+              width: 15px;
+              height: 15px;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              margin-right: 10px;
+            }
+            label{
+              font-weight: lighter;
+            }
           }
           .button{
+            border-radius: 50px;
             font-size: 20px;
+            margin-bottom: 25px;
+            cursor: pointer;
+          }
+          .button1{
+            border: none;
+            background: #7D9F90;
+            color: #ffffff;
+          }
+          .button2{
+            background: none;
+            border: 2px solid #7D9F90;
           }
         }
       }

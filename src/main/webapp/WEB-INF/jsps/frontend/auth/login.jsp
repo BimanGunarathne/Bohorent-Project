@@ -17,7 +17,7 @@
         <div class="loginmaindivbox">
             <div class="loginbox">
                 <div class="loginitem">
-                    <h1 class="logo">BOHO<br>RENT</h1>
+                    <h1 class="logo"><a class="logo" href="">BOHO<br>RENT</a></h1>
                     <h1 class="">Login</h1>
                     <form action="" method="post">
                         <input class="email" type="text" placeholder="Username">
@@ -27,7 +27,7 @@
                             <label for="myCheckbox">Show password</label>
                         </div>
                         <input class="button button1" type="submit" value="Login">
-                        <input class="button button2" type="submit" value="Signup">
+                        <a href="register" class="button2">Signup</a>
                     </form>
                 </div>
             </div>

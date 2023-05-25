@@ -33,6 +33,7 @@
           color: #7D9F90;
           font-size: 50px;
           text-align: center;
+          text-decoration: none;
         }
         h1{
           font-size: 30px;
@@ -79,8 +80,18 @@
             color: #ffffff;
           }
           .button2{
+            height: 5vh;
+            border-radius: 50px;
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            cursor: pointer;
             color: #7D9F90;
             background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
             border: 2px solid #7D9F90;
           }
         }

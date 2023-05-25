@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ethereal', sans-serif;
+}
+
+.mainsection{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  .loginmaindivbox{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    .loginbox{
+      width: 50%;
+      height: 100vh;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      .loginitem{
+        width: 600px;
+        height: 800px;
+        padding: 65px;
+        .logo{
+          width: 100%;
+          color: #7D9F90;
+          font-size: 50px;
+          text-align: center;
+          text-decoration: none;
+        }
+        h1{
+          font-size: 30px;
+          margin-bottom: 50px;
+        }
+        form{
+          display: flex;
+          flex-direction: column;
+          input{
+            height: 5vh;
+            font-size: 15px;
+          }
+          .email{
+            padding-left: 20px;
+            margin-bottom: 25px;
+          }
+          .password{
+            padding-left: 20px;
+          }
+          .checkbox{
+            display: flex;
+            align-items: center;
+            .check-box[type="checkbox"]{
+              width: 15px;
+              height: 15px;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              margin-right: 10px;
+            }
+            label{
+              font-weight: lighter;
+            }
+          }
+          .button{
+            border-radius: 50px;
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          .button1{
+            border: none;
+            background: #7D9F90;
+            color: #ffffff;
+          }
+          .button2{
+            height: 5vh;
+            border-radius: 50px;
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #7D9F90;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border: 2px solid #7D9F90;
+          }
+        }
+      }
+    }
+  }
+  .maindivbox{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    .bacground{
+      width: 50%;
+      height: 100vh;
+      img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+    }
+  }
+}

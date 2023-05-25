@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Login</title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="scss/css/login.css"/>
 </head>

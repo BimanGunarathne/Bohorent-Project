@@ -22,7 +22,7 @@ public class RegisterController {
     @Route(value = "/register", respondsToMethods = HttpMethod.POST)
     public String register(HttpServletRequest request) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        Query query = session.createQuery("from User where email = :email");
+        Query query = session.createQuery("from users where email = :email");
         query.setParameter("email", request.getParameter("email"));
 
         try{

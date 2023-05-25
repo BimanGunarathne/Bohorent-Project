@@ -3,14 +3,14 @@ package com.bohorent.shop.entity;
 import javax.persistence.*;
 import java.sql.Timestamp;
 
-@Entity(name = "User")
-public class User extends BaseEntity{
+@Entity(name = "users")
+public class User extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String First_Name;
-    private String Last_Name;
-    private String Username;
+    private String username;
+    private String firstName;
+    private String lastName;
     @Column(unique = true)
     private String email;
     private Timestamp email_verified_at;
@@ -20,6 +20,7 @@ public class User extends BaseEntity{
     private String city;
     private String post_code;
     private String phone;
+    private boolean active;
 
     public Long getId() {
         return id;
@@ -29,28 +30,28 @@ public class User extends BaseEntity{
         this.id = id;
     }
 
-    public String getFirst_Name() {
-        return First_Name;
-    }
-
-    public void setFirst_Name(String first_Name) {
-        First_Name = first_Name;
-    }
-
-    public String getLast_Name() {
-        return Last_Name;
-    }
-
-    public void setLast_Name(String last_Name) {
-        Last_Name = last_Name;
-    }
-
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public void setUsername(String username) {
-        Username = username;
+        this.username = username;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -115,5 +116,13 @@ public class User extends BaseEntity{
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }

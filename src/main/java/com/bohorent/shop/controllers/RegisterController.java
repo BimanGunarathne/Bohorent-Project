@@ -33,7 +33,7 @@ public class RegisterController {
 
         }
         User user = new User();
-        user.setName(request.getParameter("name"));
+        user.setUsername(request.getParameter("username"));
         user.setEmail(request.getParameter("email"));
         user.setPassword(request.getParameter("password"));
 

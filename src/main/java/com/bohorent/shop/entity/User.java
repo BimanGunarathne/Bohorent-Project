@@ -8,7 +8,9 @@ public class User extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
+    private String First_Name;
+    private String Last_Name;
+    private String Username;
     @Column(unique = true)
     private String email;
     private Timestamp email_verified_at;
@@ -27,12 +29,28 @@ public class User extends BaseEntity{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirst_Name() {
+        return First_Name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirst_Name(String first_Name) {
+        First_Name = first_Name;
+    }
+
+    public String getLast_Name() {
+        return Last_Name;
+    }
+
+    public void setLast_Name(String last_Name) {
+        Last_Name = last_Name;
+    }
+
+    public String getUsername() {
+        return Username;
+    }
+
+    public void setUsername(String username) {
+        Username = username;
     }
 
     public String getEmail() {

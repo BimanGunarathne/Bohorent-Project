@@ -21,17 +21,21 @@
     .loginbox{
       width: 50%;
       height: 100vh;
-      background: #7D9F90;
       align-items: center;
       display: flex;
       justify-content: center;
       .loginitem{
-        width: 500px;
-        height: 600px;
-        padding: 80px;
-        background: white;
+        width: 600px;
+        height: 750px;
+        padding: 65px;
+        .logo{
+          width: 100%;
+          color: #7D9F90;
+          font-size: 50px;
+          text-align: center;
+        }
         h1{
-          font-size: 40px;
+          font-size: 30px;
           margin-bottom: 50px;
         }
         form{
@@ -66,6 +70,7 @@
             border-radius: 50px;
             font-size: 20px;
             margin-bottom: 25px;
+            font-weight: bold;
             cursor: pointer;
           }
           .button1{
@@ -74,6 +79,7 @@
             color: #ffffff;
           }
           .button2{
+            color: #7D9F90;
             background: none;
             border: 2px solid #7D9F90;
           }

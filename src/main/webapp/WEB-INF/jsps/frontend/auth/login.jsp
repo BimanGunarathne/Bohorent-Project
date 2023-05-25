@@ -17,7 +17,8 @@
         <div class="loginmaindivbox">
             <div class="loginbox">
                 <div class="loginitem">
-                    <h1>Login</h1>
+                    <h1 class="logo">BOHO<br>RENT</h1>
+                    <h1 class="">Login</h1>
                     <form action="" method="post">
                         <input class="email" type="text" placeholder="Username">
                         <input class="password" type="password" placeholder="Password">

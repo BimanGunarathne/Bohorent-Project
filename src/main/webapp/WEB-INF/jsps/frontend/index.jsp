@@ -1,3 +1,4 @@
+<jsp:include page="cosmetics/navbar.jsp"/>
 <%--
   Created by IntelliJ IDEA.
   User: biman
@@ -13,34 +14,7 @@
     <link rel="stylesheet" type="text/css" href="scss/css/style.css"/>
 </head>
 <body>
-    <header>
-        <nav class="mainnav">
-            <div class="divleft">
-                <ul class="ulleft">
-                    <li><a href="">TikTok</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Facebook</a></li>
-                </ul>
-            </div>
-            <div class="divmid">
-                <a class="logo" href="">
-                    <h3>BOHO<br>RENT</h3>
-                </a>
-            </div>
-            <div class="divright">
-                <ul class="ulright">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Packages</a></li>
-                    <li><a href="">Inventory</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="login">Login</a></li>
-                    <li><a href="register">Signup</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="mainbody">
+    <div class="mainbody" id="mainbody">
         <div class="videobox">
             <div class="videotext">
                 <h1>BOHO<br>RENT</h1>
@@ -82,5 +56,7 @@
         <div class="mainfooter">
         </div>
     </footer>
+
+    <script src="js/navbar.js"></script>
 </body>
 </html>

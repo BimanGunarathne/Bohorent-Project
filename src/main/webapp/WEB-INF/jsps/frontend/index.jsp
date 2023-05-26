@@ -79,7 +79,9 @@
         </div>
     </div>
     <footer class="mainfooter">
+        <div class="mainfooter">
 
+        </div>
     </footer>
 </body>
 </html>

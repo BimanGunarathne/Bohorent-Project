@@ -19,7 +19,7 @@
             <div class="loginitem">
                 <h1 class="logo"><a class="logo" href="">BOHO<br>RENT</a></h1>
                 <h1 class="">Signup</h1>
-                <form action="" method="post">
+                <form action="register" method="post">
                     <input class="email" type="text" placeholder="Username">
                     <input class="email" type="email" placeholder="Email">
                     <input class="password" type="password" placeholder="Password">

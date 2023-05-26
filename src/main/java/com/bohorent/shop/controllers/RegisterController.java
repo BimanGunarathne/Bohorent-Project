@@ -14,20 +14,19 @@ import javax.servlet.http.HttpServletRequest;
 
 @Routes
 public class RegisterController {
-    @Route("/register")
-    public String get(HttpServletRequest request) {
+    @Route(value = "/register", respondsToMethods = HttpMethod.GET)
+    public String index(HttpServletRequest request) {
         return "frontend/auth/register.jsp";
     }
-
     @Route(value = "/register", respondsToMethods = HttpMethod.POST)
     public String register(HttpServletRequest request) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        Query query = session.createQuery("from users where email = :email");
+        Query query = session.createQuery("from users where email=:email");
         query.setParameter("email", request.getParameter("email"));
 
         try{
             query.getSingleResult();
-            request.setAttribute("error", "User with this email already exists");
+            request.getSession().setAttribute("error", "User with this email already exists");
             return "redirect:/register";
         }catch (NoResultException e){
 

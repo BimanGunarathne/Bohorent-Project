@@ -13,7 +13,7 @@ import javax.servlet.annotation.WebFilter;
 @WebFilter(filterName = "RoutesFilter", urlPatterns = "/*")
 public class RoutConfig extends RoutesFilter {
     @Override
-    public void init(FilterConfig filterConfig)throws ServletException{
+    public void init(FilterConfig filterConfig) throws ServletException{
         System.out.println("init...");
         RoutingTable routing = new RoutingTable();
         routing

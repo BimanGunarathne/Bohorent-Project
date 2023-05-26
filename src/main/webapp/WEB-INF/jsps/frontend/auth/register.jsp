@@ -20,9 +20,9 @@
                 <h1 class="logo"><a class="logo" href="">BOHO<br>RENT</a></h1>
                 <h1 class="">Signup</h1>
                 <form action="register" method="post">
-                    <input class="email" type="text" placeholder="Username">
-                    <input class="email" type="email" placeholder="Email">
-                    <input class="password" type="password" placeholder="Password">
+                    <input class="email" type="text" name="username" placeholder="Username">
+                    <input class="email" type="email" name="email" placeholder="Email">
+                    <input class="password" type="password" name="password" placeholder="Password">
                     <div class="checkbox">
                         <input class="check-box" type="checkbox" id="myCheckbox">
                         <label for="myCheckbox">Show password</label>

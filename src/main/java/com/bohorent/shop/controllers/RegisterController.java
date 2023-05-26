@@ -1,6 +1,7 @@
 package com.bohorent.shop.controllers;
 
 import com.bohorent.shop.entity.User;
+import com.bohorent.shop.util.Encryption;
 import com.bohorent.shop.util.HibernateUtil;
 import org.baswell.routes.HttpMethod;
 import org.baswell.routes.Route;
@@ -34,7 +35,7 @@ public class RegisterController {
         User user = new User();
         user.setUsername(request.getParameter("username"));
         user.setEmail(request.getParameter("email"));
-        user.setPassword(request.getParameter("password"));
+        user.setPassword(Encryption.encrypt(request.getParameter("password")));
 
         Transaction transaction = session.beginTransaction();
 

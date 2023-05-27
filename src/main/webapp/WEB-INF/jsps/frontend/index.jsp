@@ -15,7 +15,6 @@
 </head>
 <body>
     <div class="mainbody" id="mainbody" >
-        <section class="page">
         <div class="videobox">
             <div class="videotext">
                 <h1>BOHO<br>RENT</h1>
@@ -26,8 +25,6 @@
                 <video src="resourses/video2.mp4" autoplay loop muted></video>
             </div>
         </div>
-        </section>
-        <section class="page">
         <div class="imgbox1">
             <div class="divbox">
                 <div class="textbox">
@@ -39,8 +36,6 @@
                 <img class="mainimg" src="resourses/image.png" alt="">
             </div>
         </div>
-        </section>
-        <section class="page">
         <div class="imgbox2 ">
             <figure class="gallery__item--1">
                 <img src="resourses/image1.png" alt="">
@@ -56,7 +51,6 @@
             </figure>
 <%--            <a href="">Boho Packages</a>--%>
         </div>
-        </section>
     </div>
     <footer class="mainfooter">
         <div class="mainfooter">

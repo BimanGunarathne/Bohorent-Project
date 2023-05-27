@@ -9,6 +9,7 @@
 <html>
 <head>
   <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" type="text/css" href="scss/css/style.css"/>
 </head>
 <body>
@@ -16,9 +17,9 @@
   <nav class="mainnav" id="mainnav">
     <div class="divleft">
       <ul class="ulleft">
-        <li><a href="">TikTok</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Facebook</a></li>
+        <li><a href="" ><i class="fab fa-tiktok"></i>  TikTok</a></li>
+        <li><a href="" ><i class="fab fa-instagram"></i>  Instagram</a></li>
+        <li><a href="" ><i class="fab fa-facebook"></i>  Facebook</a></li>
       </ul>
     </div>
     <div class="divmid">

@@ -11,6 +11,7 @@
 <head>
     <title>Boho Rent</title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="scss/css/style.css"/>
 </head>
 <body>
@@ -54,15 +55,10 @@
                 <figure class="gallery__item--4">
                     <img src="resourses/image3.png" alt="">
                 </figure>
-                <%--            <a href="">Boho Packages</a>--%>
             </div>
         </section>
+        <jsp:include page="cosmetics/footer.jsp"/>
     </div>
-    <footer class="mainfooter">
-        <div class="mainfooter">
-        </div>
-    </footer>
-
     <script src="js/navbar.js"></script>
 </body>
 </html>

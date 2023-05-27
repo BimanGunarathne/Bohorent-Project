@@ -1,5 +1,6 @@
 package com.bohorent.shop.config;
 
+import com.bohorent.shop.controllers.AboutController;
 import com.bohorent.shop.controllers.HomeController;
 import com.bohorent.shop.controllers.LoginController;
 import com.bohorent.shop.controllers.RegisterController;
@@ -20,6 +21,7 @@ public class RoutConfig extends RoutesFilter {
                 .add(new HomeController())
                 .add(new LoginController())
                 .add(new RegisterController())
+                .add(new AboutController())
                 .build();
     }
 }

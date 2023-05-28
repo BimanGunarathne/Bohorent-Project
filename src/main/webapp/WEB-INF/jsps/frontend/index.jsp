@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="mainbody" id="mainbody" >
-        <section class="section1">
+        <section class="section1" id="section1">
             <div class="videobox">
                 <div class="videotext">
                     <h1>BOHO<br>RENT</h1>
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </section>
-        <section class="section2">
+        <section class="section2" id="section2">
             <div class="imgbox1">
                 <div class="divbox">
                     <div class="textbox">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section class="section3">
+        <section class="section3" id="section3">
             <div class="imgbox2 ">
                 <figure class="gallery__item--1">
                     <img src="resourses/image1.png" alt="">
@@ -60,5 +60,6 @@
         <jsp:include page="cosmetics/footer.jsp"/>
     </div>
     <script src="js/navbar.js"></script>
+<%--    <script src="/js/style.js"></script>--%>
 </body>
 </html>

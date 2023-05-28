@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="scss/css/about.css"/>
 </head>
 <body>
-    <div class="mainbody" id="mainbody">
+    <div class="mainbody5" id="mainbody">
         <section class="main-section">
             <div class="about">
                 <dvi class="div-about">
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </section>
-        <jsp:include page="cosmetics/footer.jsp"/>
+<%--        <jsp:include page="cosmetics/footer.jsp"/>--%>
     </div>
     <script src="js/navbar.js"></script>
 </body>

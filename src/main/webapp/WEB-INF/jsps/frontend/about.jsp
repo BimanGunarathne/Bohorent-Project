@@ -33,7 +33,7 @@
                 </div>
             </div>
         </section>
-<%--        <jsp:include page="cosmetics/footer.jsp"/>--%>
+        <jsp:include page="cosmetics/footer.jsp"/>
     </div>
     <script src="js/navbar.js"></script>
 </body>

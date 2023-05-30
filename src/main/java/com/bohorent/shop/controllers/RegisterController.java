@@ -1,6 +1,8 @@
 package com.bohorent.shop.controllers;
 
 import com.bohorent.shop.entity.User;
+import com.bohorent.shop.mail.VerificationMail;
+import com.bohorent.shop.providers.MailServiceProvider;
 import com.bohorent.shop.util.Encryption;
 import com.bohorent.shop.util.HibernateUtil;
 import org.baswell.routes.HttpMethod;
@@ -42,6 +44,9 @@ public class RegisterController {
         session.save(user);
         transaction.commit();
         session.close();
+
+        VerificationMail mail = new VerificationMail(user.getEmail(), "1234");
+        MailServiceProvider.getInstance().sendMail(mail);
 
         return "frontend/auth/login.jsp";
     }

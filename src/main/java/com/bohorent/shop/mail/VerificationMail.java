@@ -24,7 +24,7 @@ public class VerificationMail extends Mailable{
 
         HtmlTextEmail content = getEmailTemplateBuilder()
                 .header()
-                .logo("BOHO RENT").logoHeight(41)
+                .logo("").logoHeight(41)
                 .and()
                 .text("Welcome, "+to).h1().center().and()
                 .text("To verify your email address click on the button below.").center().and()

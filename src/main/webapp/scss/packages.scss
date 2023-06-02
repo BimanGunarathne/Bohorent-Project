@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ethereal', sans-serif;
+}
+
+.mainbody2{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  .imagebox{
+    width: 100%;
+    height: auto;
+    position: relative;
+    .imagetext{
+      top: 0;
+      left: 0;
+      padding-left: 150px;
+      padding-right: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-shrink: 0;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      z-index: 2;
+    }
+    h1{
+      font-size: 70px;
+      padding-bottom: 4vh;
+    }
+    p{
+      font-size: 30px;
+    }
+    .image{
+      width: 100%;
+      height: 100vh;
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+    }
+  }
+}

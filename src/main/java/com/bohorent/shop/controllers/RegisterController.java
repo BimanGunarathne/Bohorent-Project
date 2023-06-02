@@ -1,8 +1,7 @@
 package com.bohorent.shop.controllers;
-
 import com.bohorent.shop.entity.User;
-import com.bohorent.shop.mail.VerificationMail;
-import com.bohorent.shop.providers.MailServiceProvider;
+import com.bohorent.shop.mail.VerificationMail; // new stuff
+import com.bohorent.shop.providers.MailServiceProvider; // new stuff
 import com.bohorent.shop.util.Encryption;
 import com.bohorent.shop.util.HibernateUtil;
 import org.baswell.routes.HttpMethod;
@@ -11,11 +10,9 @@ import org.baswell.routes.Routes;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-
-
 import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
-import java.util.UUID;
+import java.util.UUID; // new stuff
 
 @Routes
 public class RegisterController {

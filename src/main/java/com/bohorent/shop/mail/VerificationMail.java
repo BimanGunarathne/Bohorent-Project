@@ -24,7 +24,7 @@ public class VerificationMail extends Mailable{
 
         HtmlTextEmail content = getEmailTemplateBuilder()
                 .header()
-                .logo("https://www.rocketbase.io/img/logo-dark.png").logoHeight(41)
+                .logo("BOHO RENT").logoHeight(41)
                 .and()
                 .text("Welcome, "+to).h1().center().and()
                 .text("To verify your email address click on the button below.").center().and()
@@ -32,7 +32,7 @@ public class VerificationMail extends Mailable{
                 .button("Verify Your Email Address", url).blue().and()
                 .text("If you have trouble paste this link into your browser").center().and()
                 .html("<a href=\""+url+"\">"+url+"</a>").and()
-                .copyright("Eshop").url(Env.get("app.base_url")).suffix(". All rights reserved.")
+                .copyright("Bohorent").url(Env.get("app.base_url")).suffix(". All rights reserved.")
                 .build();
 
         message.setContent(content.getHtml(), "text/html");

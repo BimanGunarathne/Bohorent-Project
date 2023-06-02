@@ -15,6 +15,7 @@ import org.hibernate.query.Query;
 
 import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
+import java.util.UUID;
 
 @Routes
 public class RegisterController {
@@ -40,13 +41,16 @@ public class RegisterController {
         user.setEmail(request.getParameter("email"));
         user.setPassword(Encryption.encrypt(request.getParameter("password")));
 
+        String verificationCode = UUID.randomUUID().toString();
+        user.setVerification_code(verificationCode);
+
         Transaction transaction = session.beginTransaction();
 
         session.save(user);
         transaction.commit();
         session.close();
 
-        VerificationMail mail = new VerificationMail(user.getEmail(), "1234");
+        VerificationMail mail = new VerificationMail(user.getEmail(), verificationCode);
         MailServiceProvider.getInstance().sendMail(mail);
 
         return "frontend/auth/login.jsp";

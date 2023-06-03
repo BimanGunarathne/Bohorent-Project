@@ -60,6 +60,5 @@
         <jsp:include page="cosmetics/footer.jsp"/>
     </div>
     <script src="js/navbar.js"></script>
-<%--    <script src="/js/style.js"></script>--%>
 </body>
 </html>

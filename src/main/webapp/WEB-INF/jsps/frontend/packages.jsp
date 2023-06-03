@@ -29,6 +29,9 @@
                 </div>
             </div>
         </section>
+        <section class="section2" id="section2">
+            <jsp:include page="cosmetics/packageview.jsp"/>
+        </section>
         <jsp:include page="cosmetics/footer.jsp"/>
     </div>
     <script src="js/navbar.js"></script>

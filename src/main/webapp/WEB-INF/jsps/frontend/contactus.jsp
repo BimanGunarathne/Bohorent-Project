@@ -50,21 +50,26 @@
                             <input type="number">
                         </div>
                     </section>
-                    <section class="slots bottom">
+                    <section class="slots">
                         <div class="slot">
                             <label>Message*</label>
-                            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                            <textarea id="message" name="message" rows="4" cols="30" placeholder="Please let us know more about your event..."></textarea>
                         </div>
                     </section>
+                    <section class="slots bottom">
+                        <div class="button">
+                            <button type="submit">Send</button>
+                         </div>
+                    </section>
                 </div>
-            </div>
-            <div class="information-img">
-                <div class="img-box">
-                    <img src="resourses/Contact.png">
+                <div class="information-img">
+                    <div class="img-box">
+                        <img src="resourses/Contact.png">
+                    </div>
                 </div>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.3366050061761!2d-74.23378321749699!3d40.770115263619516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ab478269cb33%3A0x1211347c6768430b!2sJohn&#39;s%20Market!5e0!3m2!1sen!2sus!4v1685852918746!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.3366050061761!2d-74.23378321749699!3d40.770115263619516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ab478269cb33%3A0x1211347c6768430b!2sJohn&#39;s%20Market!5e0!3m2!1sen!2sus!4v1685852918746!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <jsp:include page="cosmetics/footer.jsp"/>

@@ -29,7 +29,7 @@
             </div>
             <div class="div-img">
                 <div class="img">
-                    <img src="resourses/Catherine.png">
+                    <img src="resourses/Chathi.png">
                 </div>
             </div>
         </section>

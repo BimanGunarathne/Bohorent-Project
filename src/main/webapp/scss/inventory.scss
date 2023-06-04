@@ -17,9 +17,16 @@
     z-index: 1;
     .filter-section {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 50px;
+      label{
+        font-size: 25px;
+      }
+      select{
+        width: 250px;
+        height: 45px;
+        font-size: 25px;
+      }
     }
-
     .products-view {
       display: flex;
       flex-wrap: wrap;
@@ -32,7 +39,9 @@
       margin: 20px;
       text-align: center;
       display: flex;
+      border: black solid 1px;
       flex-direction: column;
+      padding-bottom: 10px;
     }
 
     .product .product-image {

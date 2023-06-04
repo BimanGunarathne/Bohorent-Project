@@ -64,13 +64,17 @@
                 </div>
                 <div class="information-img">
                     <div class="img-box">
-                        <div class="info">
-                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
-                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
-                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
-                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
-                            <img src="resourses/Contact.png">
+                        <div class="info-box">
+                            <div class="info">
+                                <div class="left">
+                                    <a href=""><i class="fas fa-map-marker-alt"></i>Orange, New Jersey</a>
+                                    <a class="a" href=""><i class="fas fa-phone"></i>551-271-0471</a>
+                                    <a class="a" href=""><i class="fas fa-envelope"></i>nfo@bohorent.com</a>
+                                    <a class="a" href=""><i class="fas fa-map-marker-alt"></i>Scroll down for the map</a>
+                                </div>
+                            </div>
                         </div>
+                        <img src="resourses/Contact.png">
                     </div>
                 </div>
             </div>

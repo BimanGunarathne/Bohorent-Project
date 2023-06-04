@@ -95,18 +95,44 @@
       position: absolute;
       width: 50%;
       height: 100vh;
-      .info{
-        position: absolute;
+      .info-box{
         width: 100%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
         z-index: 2;
+        .info{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 500px;
+          height: 400px;
+          //background: #7D9F90;
+          .left{
+            display: flex;
+            flex-direction: column;
+          }
+          a{
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            text-align: left;
+            padding-top: 30px;
+            i{
+              padding-right: 20px;
+            }
+          }
+        }
+      }
         img{
           width: 100%;
           height: 100vh;
           object-fit: cover;
         }
-      }
     }
   }
   .map{

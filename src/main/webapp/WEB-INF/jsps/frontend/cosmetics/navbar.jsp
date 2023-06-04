@@ -17,8 +17,8 @@
   <nav class="mainnav" id="mainnav">
     <div class="divleft">
       <ul class="ulleft">
-        <li><a href="" ><i class="fab fa-tiktok"></i>  TikTok</a></li>
-        <li><a href="" ><i class="fab fa-instagram"></i>  Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@bohorent" ><i class="fab fa-tiktok"></i>  TikTok</a></li>
+        <li><a href="https://www.instagram.com/boho_rent/" ><i class="fab fa-instagram"></i>  Instagram</a></li>
         <li><a href="" ><i class="fab fa-facebook"></i>  Facebook</a></li>
       </ul>
     </div>

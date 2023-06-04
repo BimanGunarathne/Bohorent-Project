@@ -20,8 +20,8 @@
         <span>Contact: 551-271-0471</span>
       </div>
       <ul class="social-icons">
-        <li><a href=""><i class="fab fa-tiktok"></i> </a></li>
-        <li><a href=""><i class="fab fa-instagram"></i> </a></li>
+        <li><a href="https://www.tiktok.com/@bohorent"><i class="fab fa-tiktok"></i> </a></li>
+        <li><a href="https://www.instagram.com/boho_rent/"><i class="fab fa-instagram"></i> </a></li>
         <li><a href=""><i class="fab fa-facebook"></i> </a></li>
       </ul>
     </div>

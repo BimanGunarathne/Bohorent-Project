@@ -32,7 +32,7 @@
         <li><a href="/bohorent">Home</a></li>
         <li><a href="/bohorent/packages">Packages</a></li>
         <li><a href="/bohorent/inventory">Inventory</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="/bohorent/contactus">Contact Us</a></li>
         <li><a href="/bohorent/about">About</a></li>
         <li><a href="login">Login</a></li>
         <li><a href="register">Signup</a></li>

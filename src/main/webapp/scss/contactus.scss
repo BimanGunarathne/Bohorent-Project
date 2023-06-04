@@ -26,6 +26,7 @@
       padding-left: 70px;
       padding-right: 70px;
       justify-content: center;
+      z-index: 1;
       h1{
         font-size: 40px;
         padding-bottom: 20px;
@@ -90,14 +91,21 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    z-index: 1;
     .img-box{
+      position: absolute;
       width: 50%;
       height: 100vh;
-      img{
+      .info{
+        position: absolute;
         width: 100%;
         height: 100vh;
-        object-fit: cover;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        img{
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
       }
     }
   }

@@ -64,7 +64,13 @@
                 </div>
                 <div class="information-img">
                     <div class="img-box">
-                        <img src="resourses/Contact.png">
+                        <div class="info">
+                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
+                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
+                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
+                            <a href=""><i class="fab fa-tiktok"></i>  TikTok</a></a>
+                            <img src="resourses/Contact.png">
+                        </div>
                     </div>
                 </div>
             </div>

@@ -17,47 +17,51 @@
 <body>
     <div class="mainbody4" id="mainbody">
         <section class="section" id="section">
-            <div class="email-form">
-                <h1>Contact Us</h1>
-                <section class="slots section-slots">
-                    <div class="slot">
-                        <label>First Name*</label>
-                        <input type="text">
-                    </div>
-                    <div class="slot right">
-                        <label>Last Name</label>
-                        <input type="text">
-                    </div>
-                </section>
-                <section class="slots section-slots">
-                    <div class="slot">
-                        <label>Email</label>
-                        <input type="email">
-                    </div>
-                    <div class="slot right">
-                        <label>Phone</label>
-                        <input type="text">
-                    </div>
-                </section>
-                <section class="slots section-slots">
-                    <div class="slot">
-                        <label>Event Date</label>
-                        <input type="date">
-                    </div>
-                    <div class="slot right">
-                        <label>Number of people*</label>
-                        <input type="number">
-                    </div>
-                </section>
-                <section class="slots slotM">
-                    <div class="slot">
-                        <label>Message*</label>
-                        <input class="message" type="text" placeholder="Please let us know more about your event...">
-                    </div>
-                </section>
+            <div class="email-box">
+                <div class="email-form">
+                    <h1>Contact Us</h1>
+                    <section class="slots section-slots">
+                        <div class="slot">
+                            <label>First Name*</label>
+                            <input type="text">
+                        </div>
+                        <div class="slot right">
+                            <label>Last Name</label>
+                            <input type="text">
+                        </div>
+                    </section>
+                    <section class="slots left">
+                        <div class="slot">
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="slot right">
+                            <label>Phone</label>
+                            <input type="text">
+                        </div>
+                    </section>
+                    <section class="slots left">
+                        <div class="slot">
+                            <label>Event Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="slot right">
+                            <label>Number of people*</label>
+                            <input type="number">
+                        </div>
+                    </section>
+                    <section class="slots bottom">
+                        <div class="slot">
+                            <label>Message*</label>
+                            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                        </div>
+                    </section>
+                </div>
             </div>
             <div class="information-img">
-                <img src="resourses/Contact.png">
+                <div class="img-box">
+                    <img src="resourses/Contact.png">
+                </div>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.3366050061761!2d-74.23378321749699!3d40.770115263619516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ab478269cb33%3A0x1211347c6768430b!2sJohn&#39;s%20Market!5e0!3m2!1sen!2sus!4v1685852918746!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

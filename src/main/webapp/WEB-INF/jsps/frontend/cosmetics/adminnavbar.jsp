@@ -17,10 +17,11 @@
     <nav class="mainnav" id="mainnav">
         <div class="divleft">
             <ul class="ulleft">
-                <li><a href="/bohorent">Users</a></li>
-                <li><a href="/bohorent/packages">Add Packages</a></li>
-                <li><a href="/bohorent/inventory">Add Item</a></li>
-                <li><a href="/bohorent/contactus">Events</a></li>
+                <li><a href="/bohorent">Home</a></li>
+                <li><a href="/bohorent/packages">Packages</a></li>
+                <li><a href="/bohorent/inventory">Inventory</a></li>
+                <li><a href="/bohorent/contactus">Contact Us</a></li>
+                <li><a href="/bohorent/about">About</a></li>
             </ul>
         </div>
         <div class="divmid">
@@ -31,11 +32,10 @@
         </div>
         <div class="divright">
             <ul class="ulright">
-                <li><a href="/bohorent">Home</a></li>
-                <li><a href="/bohorent/packages">Packages</a></li>
-                <li><a href="/bohorent/inventory">Inventory</a></li>
-                <li><a href="/bohorent/contactus">Contact Us</a></li>
-                <li><a href="/bohorent/about">About</a></li>
+                <li><a href="/bohorent">Users</a></li>
+                <li><a href="/bohorent/packages">Add Packages</a></li>
+                <li><a href="/bohorent/inventory">Add Item</a></li>
+                <li><a href="/bohorent/contactus">Events</a></li>
             </ul>
         </div>
     </nav>

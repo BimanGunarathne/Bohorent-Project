@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: biman
-  Date: 5/26/2023
-  Time: 9:09 PM
+  Date: 6/5/2023
+  Time: 7:29 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,21 +10,23 @@
 <head>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" type="text/css" href="scss/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="scss/css/adminnavbar.css"/>
 </head>
 <body>
 <header>
     <nav class="mainnav" id="mainnav">
         <div class="divleft">
             <ul class="ulleft">
-                <li><a href="https://www.tiktok.com/@bohorent"><i class="fab fa-tiktok"></i> TikTok</a></li>
-                <li><a href="https://www.instagram.com/boho_rent/"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href=""><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="/bohorent">Users</a></li>
+                <li><a href="/bohorent/packages">Add Packages</a></li>
+                <li><a href="/bohorent/inventory">Add Item</a></li>
+                <li><a href="/bohorent/contactus">Events</a></li>
             </ul>
         </div>
         <div class="divmid">
             <a class="logo" href="">
                 <h3>BOHO<br>RENT</h3>
+                <h3 class="h3">/ Admin</h3>
             </a>
         </div>
         <div class="divright">
@@ -34,8 +36,6 @@
                 <li><a href="/bohorent/inventory">Inventory</a></li>
                 <li><a href="/bohorent/contactus">Contact Us</a></li>
                 <li><a href="/bohorent/about">About</a></li>
-                <li><a href="login">Login</a></li>
-                <li><a href="register">Signup</a></li>
             </ul>
         </div>
     </nav>

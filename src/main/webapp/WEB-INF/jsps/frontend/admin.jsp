@@ -1,3 +1,4 @@
+<jsp:include page="cosmetics/adminnavbar.jsp"/>
 <%--
   Created by IntelliJ IDEA.
   User: biman

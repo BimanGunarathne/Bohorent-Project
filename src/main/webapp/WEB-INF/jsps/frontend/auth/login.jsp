@@ -13,31 +13,31 @@
     <link rel="stylesheet" type="text/css" href="scss/css/login.css"/>
 </head>
 <body>
-    <div class="mainsection">
-        <div class="loginmaindivbox">
-            <div class="loginbox">
-                <div class="loginitem">
-                    <h1 class="logo"><a class="logo" href="/bohorent">BOHO<br>RENT</a></h1>
-                    <h1 class="">Login</h1>
-                    <form action="" method="post">
-                        <input class="email" type="text" placeholder="Username">
-                        <input class="password" type="password" placeholder="Password">
-                        <div class="checkbox">
-                            <input class="check-box" type="checkbox" id="myCheckbox">
-                            <label for="myCheckbox">Show password</label>
-                        </div>
-                        <input class="button button1" type="submit" value="Login">
-                        <a href="register" class="button2">Signup</a>
-                    </form>
-                </div>
+<div class="mainsection">
+    <div class="loginmaindivbox">
+        <div class="loginbox">
+            <div class="loginitem">
+                <h1 class="logo"><a class="logo" href="/bohorent">BOHO<br>RENT</a></h1>
+                <h1 class="">Login</h1>
+                <form action="" method="post">
+                    <input class="email" type="text" placeholder="Username" required>
+                    <input class="password" type="password" id="password" placeholder="Password" required>
+                    <div class="checkbox">
+                        <input class="check-box" type="checkbox" id="myCheckbox">
+                        <label for="myCheckbox">Show password</label>
+                    </div>
+                    <input class="button button1" type="submit" value="Login">
+                    <a href="register" class="button2">Signup</a>
+                </form>
             </div>
         </div>
-        <div class="maindivbox">
-            <div class="bacground">
-                <img src="resourses/image1.png">
-            </div>
-        </div>
-
     </div>
+    <div class="maindivbox">
+        <div class="bacground">
+            <img src="resourses/image1.png">
+        </div>
+    </div>
+    <script src="js/showpassword.js"></script>
+</div>
 </body>
 </html>

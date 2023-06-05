@@ -23,7 +23,7 @@
                 <form action="register" method="post">
                     <input class="email" type="text" name="username" placeholder="Username">
                     <input class="email" type="email" name="email" placeholder="Email">
-                    <input class="password" type="password" name="password" placeholder="Password">
+                    <input class="password" type="password" id="password" name="password" placeholder="Password">
                     <div class="checkbox">
                         <input class="check-box" type="checkbox" id="myCheckbox">
                         <label for="myCheckbox">Show password</label>
@@ -39,7 +39,7 @@
             <img src="resourses/image2.png">
         </div>
     </div>
-
+    <script src="js/showpassword.js"></script>
 </div>
 </body>
 </html>

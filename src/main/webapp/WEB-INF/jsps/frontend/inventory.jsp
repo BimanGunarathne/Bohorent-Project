@@ -38,7 +38,7 @@
                         <button class="buy-button">Add to cart</button>
                     </div>
                     <div class="item-view">
-                        <a href="#"><i class="fas fa-eye"></i></a>
+                        <a href="item"><i class="fas fa-eye"></i></a>
                     </div>
                 </div>
                 <div class="product new">

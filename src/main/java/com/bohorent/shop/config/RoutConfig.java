@@ -22,6 +22,7 @@ public class RoutConfig extends RoutesFilter {
                 .add(new PackagesController())
                 .add(new InventoryController())
                 .add(new ContactusController())
+                .add(new ProductViewController())
                 .build();
     }
 }

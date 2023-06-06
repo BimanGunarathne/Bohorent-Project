@@ -25,6 +25,7 @@ public class RoutConfig extends RoutesFilter {
                 .add(new ProductViewController())
                 .add(new AdminController())
                 .add(new UserController())
+                .add(new UserProfileController())
                 .build();
     }
 }

@@ -17,7 +17,6 @@
     <nav class="mainnav" id="mainnav">
         <div class="divleft">
             <ul class="ulleft">
-                <li><a href="/bohorent">Home</a></li>
                 <li><a href="/bohorent/packages">Packages</a></li>
                 <li><a href="/bohorent/inventory">Inventory</a></li>
                 <li><a href="/bohorent/contactus">Contact Us</a></li>
@@ -25,9 +24,9 @@
             </ul>
         </div>
         <div class="divmid">
-            <a class="logo" href="">
+            <a class="logo" href="/bohorent">
                 <h3>BOHO<br>RENT</h3>
-                <h3 class="h3">/ Admin</h3>
+                <a class="logo" href="/bohorent/admin"><h3 class="h3">/ Admin</h3></a>
             </a>
         </div>
         <div class="divright">

@@ -9,6 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 public class AddPackageController {
     @Route("/addpackage")
     public String get(HttpServletRequest request) {
-        return "frontend/addpackage.jsp";
+        return "frontend/addpackages.jsp";
     }
 }

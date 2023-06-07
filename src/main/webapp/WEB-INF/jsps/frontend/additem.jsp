@@ -68,7 +68,7 @@
         </div>
         <div class="divbottom">
             <div class="view">
-                <h1 class="h3">Package View</h1>
+                <h1 class="h3">Item View</h1>
                 <h2 class="h4">Coming Soon</h2>
             </div>
         </div>

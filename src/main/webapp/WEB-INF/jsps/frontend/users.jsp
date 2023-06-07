@@ -71,6 +71,12 @@
                 <div class="heading">
                     <h1 class="bottomh1">User Details</h1>
                 </div>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
                 <table id="data-table">
                     <thead>
                     <tr>
@@ -113,6 +119,7 @@
         </div>
     </section>
 </div>
+<script src="js/searchbar.js"></script>
 <script src="js/usertable.js"></script>
 </body>
 </html>

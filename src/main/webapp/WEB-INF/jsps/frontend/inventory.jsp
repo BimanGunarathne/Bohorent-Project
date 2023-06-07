@@ -18,6 +18,12 @@
     <div class="mainbody3" id="mainbody">
         <section class="section">
             <div class="filter-section">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
                 <label for="filter">Filter:</label>
                 <select id="filter">
                     <option value="all">Sort by</option>
@@ -110,6 +116,7 @@
         </section>
         <jsp:include page="cosmetics/footer.jsp"/>
     </div>
+    <script src="js/searchbar.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 </html>

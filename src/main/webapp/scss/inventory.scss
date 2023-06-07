@@ -16,15 +16,64 @@
     margin-top: 100px;
     z-index: 1;
     .filter-section {
-      text-align: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
       margin-top: 50px;
+      justify-content: center;
+      .search-bar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 800px;
+        height: 45px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-right: 15px;
+      }
+
+      #search-input {
+        padding: 15px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background-color: transparent;
+        transition: border-color 0.3s ease-in-out;
+      }
+
+      #search-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 10px;
+      }
+
+      .fa-search {
+        color: #555;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+      }
+
+      #search-input:focus {
+        border-color: #ff7f50;
+      }
+
+      #search-input:focus + #search-btn .fa-search {
+        color: #ff7f50;
+      }
+
       label{
-        font-size: 25px;
+        font-size: 20px;
+        padding-right: 5px;
       }
       select{
         width: 250px;
         height: 45px;
-        font-size: 25px;
+        font-size: 20px;
+        padding-left: 10px;
       }
     }
     .products-view {

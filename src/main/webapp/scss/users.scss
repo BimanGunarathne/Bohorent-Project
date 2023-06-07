@@ -142,7 +142,53 @@
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     border: 1px solid #888888;
+
+    .search-bar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 800px;
+      height: 5vh;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+
+    #search-input {
+      padding: 15px;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      background-color: transparent;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    #search-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 10px;
+    }
+
+    .fa-search {
+      color: #555;
+      font-size: 18px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    #search-input:focus {
+      border-color: #ff7f50;
+    }
+
+    #search-input:focus + #search-btn .fa-search {
+      color: #ff7f50;
+    }
 
     .table-container {
       overflow-x: auto;

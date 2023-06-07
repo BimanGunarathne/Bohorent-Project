@@ -69,6 +69,13 @@
         <div class="divbottom">
             <div class="view">
                 <h1 class="h3">Item View</h1>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
                 <div class="table-container">
                     <table id="data-table">
                         <thead>
@@ -101,5 +108,6 @@
 </div>
 <script src="js/usertable.js"></script>
 <script src="js/itemimage.js"></script>
+<script src="js/searchbar.js"></script>
 </body>
 </html>

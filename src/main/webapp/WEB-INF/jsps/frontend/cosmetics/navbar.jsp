@@ -23,7 +23,7 @@
             </ul>
         </div>
         <div class="divmid">
-            <a class="logo" href="">
+            <a class="logo" href="/bohorent">
                 <h3>BOHO<br>RENT</h3>
             </a>
         </div>

@@ -49,11 +49,6 @@
                             <input type="number">
                         </div>
                     </section>
-                    <section class="slots bottom">
-                        <div class="button">
-                            <button type="submit">Send</button>
-                        </div>
-                    </section>
                 </div>
                 <div class="description">
                     <div class="description-box">
@@ -61,6 +56,23 @@
                             <div class="slot left">
                                 <label>Event Description</label>
                                 <textarea id="message" name="message" rows="4" cols="30" placeholder="Please let us know more about your event..."></textarea>
+                            </div>
+                            <div class="buttons">
+                                <section class="bottom">
+                                    <div class="button">
+                                        <button type="submit">Back</button>
+                                    </div>
+                                </section>
+                                <section class="bottom">
+                                    <div class="button">
+                                        <button type="submit">Decline</button>
+                                    </div>
+                                </section>
+                                <section class="bottom">
+                                    <div class="button">
+                                        <button type="submit">Accept</button>
+                                    </div>
+                                </section>
                             </div>
                         </section>
                     </div>

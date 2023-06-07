@@ -24,7 +24,7 @@
                     <h1 class="h2">100</h1>
                 </div>
                 <dvi class="button">
-                    <a href="">User</a>
+                    <a href="/bohorent/addpackage">User</a>
                 </dvi>
             </div>
             <div class="itemcont">

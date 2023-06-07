@@ -69,11 +69,37 @@
         <div class="divbottom">
             <div class="view">
                 <h1 class="h3">Item View</h1>
-                <h2 class="h4">Coming Soon</h2>
+                <div class="table-container">
+                    <table id="data-table">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Retail Price</th>
+                            <th>Selling Price</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Item 1</td>
+                            <td>10</td>
+                            <td>$20</td>
+                            <td>$15</td>
+                            <td>
+                                <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
 </div>
+<script src="js/usertable.js"></script>
 <script src="js/itemimage.js"></script>
 </body>
 </html>

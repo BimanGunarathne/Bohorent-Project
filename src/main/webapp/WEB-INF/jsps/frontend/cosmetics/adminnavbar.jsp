@@ -33,7 +33,7 @@
             <ul class="ulright">
                 <li><a href="/bohorent/users">Users</a></li>
                 <li><a href="/bohorent/addpackage">Add Packages</a></li>
-                <li><a href="/bohorent/inventory">Add Item</a></li>
+                <li><a href="/bohorent/additem">Add Item</a></li>
                 <li><a href="/bohorent/contactus">Events</a></li>
             </ul>
         </div>

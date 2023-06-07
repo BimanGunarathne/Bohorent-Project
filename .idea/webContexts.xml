@@ -4,6 +4,7 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/about.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/addpackages.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/auth/admin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/auth" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/cosmetics/navbar.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/cosmetics" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend" />

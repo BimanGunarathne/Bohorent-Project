@@ -12,7 +12,7 @@
     <title>Boho Rent</title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="scss/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/scss/css/style.css"/>
 </head>
 <body>
     <div class="mainbody" id="mainbody" >
@@ -24,7 +24,7 @@
                     <h2>FOR INDOORS & OUTDOORS<br>FOR ALL SEASONS!</h2>
                 </div>
                 <div class="video">
-                    <video src="resourses/video2.mp4" autoplay loop muted></video>
+                    <video src="assets/resourses/video2.mp4" autoplay loop muted></video>
                 </div>
             </div>
         </section>
@@ -37,28 +37,28 @@
                     </div>
                 </div>
                 <div class="imgbox">
-                    <img class="mainimg" src="resourses/image.png" alt="">
+                    <img class="mainimg" src="assets/resourses/image.png" alt="">
                 </div>
             </div>
         </section>
         <section class="section3" id="section3">
             <div class="imgbox2 ">
                 <figure class="gallery__item--1">
-                    <img src="resourses/image1.png" alt="">
+                    <img src="assets/resourses/image1.png" alt="">
                 </figure>
                 <figure class="gallery__item--2">
-                    <img src="resourses/image2.png" alt="">
+                    <img src="assets/resourses/image2.png" alt="">
                 </figure>
                 <figure class="gallery__item--3">
-                    <img src="resourses/image4.png" alt="">
+                    <img src="assets/resourses/image4.png" alt="">
                 </figure>
                 <figure class="gallery__item--4">
-                    <img src="resourses/image3.png" alt="">
+                    <img src="assets/resourses/image3.png" alt="">
                 </figure>
             </div>
         </section>
         <jsp:include page="cosmetics/footer.jsp"/>
     </div>
-    <script src="js/navbar.js"></script>
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>

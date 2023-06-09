@@ -9,6 +9,7 @@
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/cosmetics/navbar.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/cosmetics" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend/inventory.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/frontend" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/frontend/packages.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/frontend" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
       </map>
     </option>

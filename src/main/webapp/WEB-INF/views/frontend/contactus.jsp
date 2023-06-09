@@ -12,7 +12,7 @@
     <title>Contact Us</title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="scss/css/contactus.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/scss/css/contactus.css"/>
 </head>
 <body>
     <div class="mainbody4" id="mainbody">
@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="resourses/Contact.png">
+                        <img src="assets/resourses/Contact.png">
                     </div>
                 </div>
             </div>
@@ -84,6 +84,6 @@
         </section>
         <jsp:include page="cosmetics/footer.jsp"/>
     </div>
-    <script src="js/navbar.js"></script>
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>

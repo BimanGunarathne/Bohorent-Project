@@ -11,7 +11,7 @@
     <title>Item</title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" type="text/css" href="scss/css/productview.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/scss/css/productview.css"/>
 </head>
 <body>
 <div class="mainbody" id="">
@@ -51,7 +51,7 @@
         </div>
 
         <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
-        <script src="js/productview.js"></script>
+        <script src="assets/js/productview.js"></script>
     </section>
 </div>
 </body>

@@ -12,7 +12,7 @@
     <title>Add Item</title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" type="text/css" href="scss/css/additem.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/scss/css/additem.css"/>
 </head>
 <body>
 <div class="mainbody">
@@ -106,8 +106,8 @@
         </div>
     </section>
 </div>
-<script src="js/usertable.js"></script>
-<script src="js/itemimage.js"></script>
-<script src="js/searchbar.js"></script>
+<script src="assets/js/usertable.js"></script>
+<script src="assets/js/itemimage.js"></script>
+<script src="assets/js/searchbar.js"></script>
 </body>
 </html>

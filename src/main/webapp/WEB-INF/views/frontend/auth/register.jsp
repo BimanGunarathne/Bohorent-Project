@@ -11,7 +11,7 @@
 <head>
     <title>Signup</title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="scss/css/register.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/scss/css/register.css"/>
 </head>
 <body>
 <div class="mainsection">
@@ -36,10 +36,10 @@
     </div>
     <div class="maindivbox">
         <div class="bacground">
-            <img src="resourses/image2.png">
+            <img src="assets/resourses/image2.png">
         </div>
     </div>
-    <script src="js/showpassword.js"></script>
+    <script src="assets/js/showpassword.js"></script>
 </div>
 </body>
 </html>

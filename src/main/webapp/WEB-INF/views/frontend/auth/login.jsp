@@ -10,12 +10,12 @@
 <%--<html>--%>
 <%--<head>--%>
 <layout:extends name="base">
-    <layout:put block="logincss" type="APPEND">
+    <layout:put block="logincss" type="REPLACE">
         <title>Login</title>
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/scss/css/login.css"/>
     </layout:put>
-    <layout:put block="login" type="APPEND">
+    <layout:put block="login" type="REPLACE">
         <div class="mainsection">
             <div class="loginmaindivbox">
                 <div class="loginbox">

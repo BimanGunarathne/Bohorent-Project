@@ -6,38 +6,45 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Login</title>
-    <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/scss/css/login.css"/>
-</head>
-<body>
-<div class="mainsection">
-    <div class="loginmaindivbox">
-        <div class="loginbox">
-            <div class="loginitem">
-                <h1 class="logo"><a class="logo" href="/bohorent">BOHO<br>RENT</a></h1>
-                <h1 class="">Login</h1>
-                <form action="" method="post">
-                    <input class="email" type="text" placeholder="Username" required>
-                    <input class="password" type="password" id="password" placeholder="Password" required>
-                    <div class="checkbox">
-                        <input class="check-box" type="checkbox" id="myCheckbox">
-                        <label for="myCheckbox">Show password</label>
+<%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
+<%--<html>--%>
+<%--<head>--%>
+<layout:extends name="base">
+    <layout:put block="logincss" type="APPEND">
+        <title>Login</title>
+        <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/scss/css/login.css"/>
+    </layout:put>
+    <layout:put block="login" type="APPEND">
+        <div class="mainsection">
+            <div class="loginmaindivbox">
+                <div class="loginbox">
+                    <div class="loginitem">
+                        <h1 class="logo"><a class="logo" href="/bohorent">BOHO<br>RENT</a></h1>
+                        <h1 class="">Login</h1>
+                        <form action="" method="post">
+                            <input class="email" type="text" placeholder="Username" required>
+                            <input class="password" type="password" id="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <input class="check-box" type="checkbox" id="myCheckbox">
+                                <label for="myCheckbox">Show password</label>
+                            </div>
+                            <input class="button button1" type="submit" value="Login">
+                            <a href="register" class="button2">Signup</a>
+                        </form>
                     </div>
-                    <input class="button button1" type="submit" value="Login">
-                    <a href="register" class="button2">Signup</a>
-                </form>
+                </div>
             </div>
+            <div class="maindivbox">
+                <div class="bacground">
+                    <img src="assets/resourses/image1.png">
+                </div>
+            </div>
+            <script src="assets/js/showpassword.js"></script>
         </div>
-    </div>
-    <div class="maindivbox">
-        <div class="bacground">
-            <img src="assets/resourses/image1.png">
-        </div>
-    </div>
-    <script src="assets/js/showpassword.js"></script>
-</div>
-</body>
-</html>
+    </layout:put>
+</layout:extends>
+<%--</head>--%>
+<%--<body>--%>
+<%--</body>--%>
+<%--</html>--%>

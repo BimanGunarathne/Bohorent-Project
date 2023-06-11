@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,11 +32,33 @@
       h1{
         font-size: 100px;
         padding-bottom: 4vh;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
       }
       h3{
         font-size: 25px;
         font-weight: lighter;
         padding-bottom: 4vh;
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      h2{
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 4vh;
+        animation: fadeInAnimation ease 10s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
     }
     video{

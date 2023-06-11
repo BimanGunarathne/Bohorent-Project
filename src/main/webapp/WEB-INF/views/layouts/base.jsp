@@ -55,7 +55,7 @@
 </layout:block>
 
 <layout:block name="packages">
-    
+
 </layout:block>
 
 <layout:block name="inventory">
@@ -65,7 +65,7 @@
 
 </layout:block>
 <layout:block name="about">
-    
+
 </layout:block>
 <layout:block name="login">
 

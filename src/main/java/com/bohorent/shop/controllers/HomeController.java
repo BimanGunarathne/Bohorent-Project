@@ -34,7 +34,12 @@ public class HomeController {
     }
 
     @Route("/about")
-    public String get(HttpServletRequest  request) {
+    public String about(HttpServletRequest  request) {
         return "frontend/about.jsp";
+    }
+
+    @Route("/item")
+    public String item(HttpServletRequest request) {
+        return "frontend/cosmetics/productview.jsp";
     }
 }

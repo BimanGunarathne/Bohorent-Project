@@ -29,12 +29,7 @@ public class RoutConfig extends RoutesFilter {
                 .add(new RegisterController())
                 .add(new AdminController())
                 .add(new EmailVerificationController())
-                .add(new UserController())
                 .add(new UserProfileController())
-                .add(new AddPackageController())
-                .add(new AddItemController())
-                .add(new EventsController())
-                .add(new EventViewController())
                 .build();
     }
 }

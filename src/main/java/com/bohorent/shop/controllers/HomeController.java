@@ -17,4 +17,24 @@ public class HomeController {
     public String profile(HttpServletRequest request) {
         return "frontend/userprofile.jsp";
     }
+
+    @Route("/packages")
+    public String packages(HttpServletRequest request){
+        return "frontend/packages.jsp";
+    }
+
+    @Route("/inventory")
+    public String inventory(HttpServletRequest request) {
+        return "frontend/inventory.jsp";
+    }
+
+    @Route("/contactus")
+    public String contactus(HttpServletRequest request) {
+        return "frontend/contactus.jsp";
+    }
+
+    @Route("/about")
+    public String get(HttpServletRequest  request) {
+        return "frontend/about.jsp";
+    }
 }

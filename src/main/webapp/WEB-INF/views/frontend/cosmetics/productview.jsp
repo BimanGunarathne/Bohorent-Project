@@ -19,9 +19,9 @@
         <div class="product-view">
             <div class="left">
                 <div class="slider">
-                    <img class="active" src="resourses/item1.png" alt="Default Product Image">
-                    <img src="resourses/itemimg2.png" alt="Product Image 1">
-                    <img src="resourses/itemimage3.png" alt="Product Image 2">
+                    <img class="active" src="assets/resourses/item1.png" alt="Default Product Image">
+                    <img src="assets/resourses/itemimg2.png" alt="Product Image 1">
+                    <img src="assets/resourses/itemimage3.png" alt="Product Image 2">
                     <div class="slider-controls">
                         <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
                         <button class="slider-next"><i class="fas fa-chevron-right"></i></button>

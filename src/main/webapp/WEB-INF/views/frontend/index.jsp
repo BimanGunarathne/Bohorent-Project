@@ -21,7 +21,7 @@
     <%--<body>--%>
     <layout:put block="index" type="REPLACE">
         <div class="mainbody" id="mainbody" >
-            <section class="section">
+            <section class="section section1">
                 <div class="videobox">
                     <div class="videotext">
                         <h1>BOHO<br>RENT</h1>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section section2">
                 <div class="imgbox1">
                     <div class="divbox">
                         <div class="textbox">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section section3">
                 <div class="imgbox2 ">
                     <figure class="gallery__item--1">
                         <img src="assets/resourses/image1.png" alt="">

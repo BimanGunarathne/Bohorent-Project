@@ -30,6 +30,9 @@
         a{
           text-decoration: none;
           color: #ffffff;
+          &:hover{
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+          }
         }
       }
     }
@@ -69,7 +72,7 @@
           font-size: 20px;
         }
         a:hover{
-          color: gray;
+          text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
         }
       }
     }

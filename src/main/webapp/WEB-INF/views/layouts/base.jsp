@@ -11,6 +11,7 @@
 <head>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/scss/css/base.css"/>
     <link rel="stylesheet" type="text/css" href="assets/scss/css/navbar.css"/>
     <layout:block name="stylecss"></layout:block>
     <layout:block name="packagecss"></layout:block>

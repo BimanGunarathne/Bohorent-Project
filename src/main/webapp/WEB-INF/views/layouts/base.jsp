@@ -17,8 +17,6 @@
     <layout:block name="inventorycss"></layout:block>
     <layout:block name="contactuscss"></layout:block>
     <layout:block name="aboutcss"></layout:block>
-    <layout:block name="logincss"></layout:block>
-    <layout:block name="signupcss"></layout:block>
     <link rel="stylesheet" type="text/css" href="assets/scss/css/footer.css"/>
 
 </head>
@@ -65,9 +63,6 @@
 
 </layout:block>
 <layout:block name="about">
-
-</layout:block>
-<layout:block name="login">
 
 </layout:block>
 <layout:block name="signup">

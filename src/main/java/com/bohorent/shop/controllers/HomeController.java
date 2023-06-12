@@ -19,7 +19,7 @@ public class HomeController {
     }
 
     @Route("/packages")
-    public String packages(HttpServletRequest request){
+    public String packages(HttpServletRequest request) {
         return "frontend/packages.jsp";
     }
 
@@ -34,7 +34,7 @@ public class HomeController {
     }
 
     @Route("/about")
-    public String about(HttpServletRequest  request) {
+    public String about(HttpServletRequest request) {
         return "frontend/about.jsp";
     }
 

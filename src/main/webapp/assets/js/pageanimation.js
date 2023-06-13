@@ -3,31 +3,35 @@ window.addEventListener('DOMContentLoaded', () => {
     animatedElement.classList.add('animate');
 });
 
-const sections = document.querySelectorAll('.section');
-const secondSection = document.querySelector('.section2');
-const thirdSection = document.querySelector('.section3');
+const section1 = document.querySelectorAll('.section');
+const section2 = document.querySelector('.section2');
+const textbox = document.querySelector('.textbox');
+const section3 = document.querySelector('.section3');
 
 function animateSections() {
     const windowHeight = window.innerHeight;
-    const secondSectionTop = secondSection.getBoundingClientRect().top;
-    const thirdSectionTop = thirdSection.getBoundingClientRect().top;
+    const secondSectionTop = section2.getBoundingClientRect().top;
+    const thirdSectionTop = section3.getBoundingClientRect().top;
 
     if (secondSectionTop < windowHeight * 0.8) {
-        secondSection.style.opacity = '1';
-        secondSection.style.transform = 'translateY(0)';
+        section2.style.opacity = '1';
+        section2.style.transform = 'translateY(0)';
+        textbox.style.opacity = '1';
+        textbox.style.transform = 'translateX(-20%)';
     }
 
     if (thirdSectionTop < windowHeight * 0.8) {
-        thirdSection.style.opacity = '1';
-        thirdSection.style.transform = 'translateY(0)';
+        section3.style.opacity = '1';
+        section3.style.transform = 'translateY(0)';
     }
 }
 
 window.addEventListener('scroll', animateSections);
 
 // Show the first section by default
-sections[0].style.opacity = '1';
-sections[0].style.transform = 'translateY(0)';
+section1[0].style.opacity = '1';
+section1[0].style.transform = 'translateY(0)';
+
 
 
 

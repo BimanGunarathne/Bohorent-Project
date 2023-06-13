@@ -113,6 +113,8 @@
         height: 500px;
         font-size: 25px;
         padding: 50px;
+        opacity: 0;
+        transition: opacit 1s ease-in-out, transform 1s ease-in-out;
         background: rgba(225, 225, 225, 0.8);
         align-items: center;
         text-align: center;
@@ -146,8 +148,8 @@
   }
   .imgbox2{
     display: grid;
-    padding: 20px;
-    grid-template-columns: repeat(8, 1fr);
+    padding: 200px;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 5vw);
     grid-gap: 0.5rem;
     z-index: 1;

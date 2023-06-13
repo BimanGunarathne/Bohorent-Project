@@ -42,4 +42,9 @@ public class HomeController {
     public String item(HttpServletRequest request) {
         return "frontend/cosmetics/productview.jsp";
     }
+
+    @Route("/cart")
+    public String cart(HttpServletRequest request) {
+        return "frontend/cartview.jsp";
+    }
 }

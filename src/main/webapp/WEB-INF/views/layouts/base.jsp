@@ -18,6 +18,7 @@
     <layout:block name="inventorycss"></layout:block>
     <layout:block name="contactuscss"></layout:block>
     <layout:block name="aboutcss"></layout:block>
+    <layout:block name="cartviewcss"></layout:block>
     <link rel="stylesheet" type="text/css" href="assets/scss/css/footer.css"/>
 
 </head>
@@ -45,6 +46,12 @@
                 <li><a href="/bohorent/about">About</a></li>
                 <li><a href="login">Login</a></li>
                 <li><a href="register">Signup</a></li>
+                <li class="cart-icon">
+                    <a href="/bohorent/cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="item-count">0</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -68,6 +75,9 @@
 </layout:block>
 <layout:block name="signup">
 
+</layout:block>
+<layout:block name="cartview">
+    
 </layout:block>
 <footer class="footer">
     <div class="footer-top">
@@ -105,5 +115,6 @@
 <script type="text/javascript" src="assets/js/style.js"></script>
 <script type="text/javascript" src="assets/js/searchbar.js"></script>
 <script type="text/javascript" src="assets/js/mainpageanimation.js"></script>
+<script type="text/javascript" src="assets/js/cartview.js"></script>
 </body>
 </html>

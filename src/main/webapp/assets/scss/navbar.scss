@@ -72,6 +72,16 @@ header{
           }
         }
       }
+      .item-count{
+        background-color: #f44336;
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 50%;
+        font-size: 12px;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+      }
     }
   }
 

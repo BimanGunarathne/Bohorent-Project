@@ -34,6 +34,14 @@ window.addEventListener('scroll', animateSections);
 section1[0].style.opacity = '1';
 section1[0].style.transform = 'translateY(0)';
 
+const itemCount = document.querySelector('.item-count');
+
+// Example: Update the item count dynamically
+let cartItemCount = 3; // Replace with your actual item count
+
+// Update the item count in the cart
+itemCount.textContent = cartItemCount.toString();
+
 
 
 

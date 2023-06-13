@@ -45,7 +45,7 @@
                         <button class="increase">+</button>
                     </div>
                     <p class="price">$10.00</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart"></button>
                 </div>
             </div>
         </div>

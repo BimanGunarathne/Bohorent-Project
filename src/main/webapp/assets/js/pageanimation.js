@@ -1,8 +1,10 @@
+// main body animation-----------------------------------------------
 window.addEventListener('DOMContentLoaded', () => {
     const animatedElement = document.getElementById('mainbody');
     animatedElement.classList.add('animate');
 });
 
+// scroll animation---------------------------------------------------
 const section1 = document.querySelectorAll('.section');
 const section2 = document.querySelector('.section2');
 const textbox = document.querySelector('.textbox');
@@ -31,6 +33,9 @@ window.addEventListener('scroll', animateSections);
 // Show the first section by default
 section1[0].style.opacity = '1';
 section1[0].style.transform = 'translateY(0)';
+
+
+
 
 
 

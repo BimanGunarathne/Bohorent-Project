@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'Ethereal', sans-serif;
 }
-
 #mainbody{
   opacity: 0;
   transform: scaleZ(1.2);
@@ -22,6 +21,7 @@
   justify-content: center;
   opacity: 0;
   transform: translateY(50px);
+  scroll-snap-align: start;
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 

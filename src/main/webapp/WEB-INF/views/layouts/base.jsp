@@ -104,6 +104,6 @@
 <script type="text/javascript" src="assets/js/navbar.js"></script>
 <script type="text/javascript" src="assets/js/style.js"></script>
 <script type="text/javascript" src="assets/js/searchbar.js"></script>
-<script type="text/javascript" src="assets/js/pageanimation.js"></script>
+<script type="text/javascript" src="assets/js/mainpageanimation.js"></script>
 </body>
 </html>

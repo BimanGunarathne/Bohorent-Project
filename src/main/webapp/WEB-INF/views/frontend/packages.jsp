@@ -18,8 +18,8 @@
     <%--</head>--%>
     <%--<body>--%>
     <layout:put block="packages" type="REPLACE">
-        <div class="mainbody2" id="mainbody">
-            <section class="section1" id="section1">
+        <div class="mainbody" id="mainbody">
+            <section class="section section1">
                 <div class="imagebox">
                     <div class="imagetext">
                         <h1>Packages</h1>
@@ -32,10 +32,11 @@
                     </div>
                 </div>
             </section>
-            <section class="section2" id="section2">
+            <section class="section section2">
                 <jsp:include page="cosmetics/packageview.jsp"/>
             </section>
                 <%--        <jsp:include page="cosmetics/footer.jsp"/>--%>
+            <script type="text/javascript" src="assets/js/mainpageanimation.js"></script>
         </div>
     </layout:put>
 </layout:extends>

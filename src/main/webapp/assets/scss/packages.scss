@@ -5,7 +5,28 @@
   font-family: 'Ethereal', sans-serif;
 }
 
-.mainbody2{
+#mainbody{
+  opacity: 0;
+  transform: scaleZ(1.2);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+#mainbody.animate{
+  opacity: 1;
+  transform: scaleZ(1);
+}
+
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(50px);
+  scroll-snap-align: start;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.mainbody{
   position: relative;
   width: 100%;
   height: auto;
@@ -35,9 +56,23 @@
     h1{
       font-size: 70px;
       padding-bottom: 4vh;
+      animation: fadeInAnimation ease 4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
     }
     p{
       font-size: 30px;
+      animation: fadeInAnimation ease 7s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
     .image{
       width: 100%;
@@ -52,7 +87,6 @@
   }
   .section2{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    opacity: 1;
   }
 }

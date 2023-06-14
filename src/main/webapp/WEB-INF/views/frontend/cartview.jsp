@@ -22,7 +22,7 @@
                     <ul id="cart-items">
                         <li class="cart-item">
                             <div class="item-details">
-                                <img src="product1.jpg" alt="Product 1" class="item-image">
+                                <img src="assets/resourses/item1.png" alt="Product 1" class="item-image">
                                 <div class="item-info">
                                     <h2 class="item-name">Product 1</h2>
                                     <p class="item-price">$10.00</p>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="right">
                     <div class="price-summary">
-                        <h2>Total</h2>
+                        <h2>Summary</h2>
                         <div class="price-row">
                             <span>Subtotal:</span>
                             <span id="subtotal">$10.00</span>
@@ -50,6 +50,7 @@
                             <span>Tax:</span>
                             <span id="tax">$1.00</span>
                         </div>
+                        <div class="vertical-line"></div>
                         <div class="price-row total">
                             <span>Total:</span>
                             <span id="total">$11.00</span>

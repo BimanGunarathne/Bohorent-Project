@@ -10,7 +10,7 @@ cartItems.forEach(item => {
     li.classList.add('cart-item');
     li.innerHTML = `
     <div class="item-details">
-      <img src="product1.jpg" alt="Product 1" class="item-image">
+      <img src="assets/resourses/item2.png" alt="Product 1" class="item-image">
       <div class="item-info">
         <h2 class="item-name">${item.name}</h2>
         <p class="item-price">$${item.price.toFixed(2)}</p>

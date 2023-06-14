@@ -1,4 +1,5 @@
-$primary-color: #009688;
+$primary-color: #7D9F90;
+$third-color: #009688;
 $secondary-color: #f44336;
 $animation-duration: 0.4s;
 
@@ -132,7 +133,7 @@ $animation-duration: 0.4s;
   }
 
   .price-summary {
-    background-color: #009688;
+    background-color: $primary-color;
     color: #ffffff;
     border-radius: 8px;
     padding: 20px;
@@ -147,12 +148,14 @@ $animation-duration: 0.4s;
   }
 
   .total {
+    font-size: 25px;
     font-weight: bold;
+    margin-top: 10px;
   }
 
   button {
     padding: 12px 24px;
-    background-color: $secondary-color;
+    background-color: $third-color;
     color: white;
     border: none;
     border-radius: 4px;
@@ -161,7 +164,7 @@ $animation-duration: 0.4s;
   }
 
   button:hover {
-    background-color: darken($secondary-color, 10%);
+    background-color: darken($primary-color, 10%);
   }
 }
 
@@ -175,10 +178,16 @@ h1 {
 }
 
 h2{
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 .checkoutbtn{
   width: 100%;
   margin-top: 20px;
+}
+
+.vertical-line {
+  width: 100%;
+  height: 1px; /* Adjust the height as per your requirement */
+  background-color: #ffffff; /* Adjust the color as per your preference */
 }

@@ -41,7 +41,7 @@
                 </div>
                 <div class="right">
                     <div class="price-summary">
-                        <h2>Price Summary</h2>
+                        <h2>Total</h2>
                         <div class="price-row">
                             <span>Subtotal:</span>
                             <span id="subtotal">$10.00</span>

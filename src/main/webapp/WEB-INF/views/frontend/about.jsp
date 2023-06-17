@@ -14,6 +14,7 @@
     <layout:put block="aboutcss" type="REPLACE">
         <title>About</title>
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="assets/scss/css/about.css"/>
     </layout:put>
@@ -21,7 +22,7 @@
         <div class="mainbody5" id="mainbody">
             <section class="main-section">
                 <div class="about">
-                    <dvi class="div-about">
+                    <dvi data-aos="fade-right" class="div-about">
                         <h1>Who am I?</h1>
                         <p>Hello Bohemia lovers! My name is Catherine and here is a little about myself, and how Boho rent started. I work in the medical field for over 6 years. Love to be surrounded by nature, mountain views and be a free spirit.  I been a bohemia lover since i was 15 years old and it always had attracted me to the boho rustic theme that is similar to hippie fashion.</p>
                         <br>
@@ -31,7 +32,7 @@
                     </dvi>
                 </div>
                 <div class="div-img">
-                    <div class="img">
+                    <div data-aos="fade-left" class="img">
                         <img src="assets/resourses/Chathi.png">
                     </div>
                 </div>

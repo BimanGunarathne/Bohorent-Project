@@ -10,6 +10,7 @@
 <head>
     <title></title>
     <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/scss/css/packageview.css"/>
 </head>
@@ -21,7 +22,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Basic</h3>
@@ -48,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Vintage</h3>
@@ -74,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Boho</h3>
@@ -103,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Bohemia</h3>
@@ -139,7 +140,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Basic</h3>
@@ -166,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Vintage</h3>
@@ -192,7 +193,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Boho</h3>
@@ -221,7 +222,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div data-aos="zoom-out" class="col-md-4 col-sm-6">
                 <div class="pricingTable">
                     <div class="pricingTable-header">
                         <h3 class="heading">Bohemia</h3>

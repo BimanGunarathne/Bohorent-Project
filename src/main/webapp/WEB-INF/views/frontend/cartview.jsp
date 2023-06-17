@@ -13,9 +13,10 @@
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="stylesheet" type="text/css" href="assets/scss/css/cartview.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </layout:put>
     <layout:put block="cartview" type="REPLACE">
-        <div class="mainbodycart">
+        <div class="mainbodycart" id="mainbody">
             <h1>Cart View</h1>
             <div class="cart-container">
                 <div class="left">

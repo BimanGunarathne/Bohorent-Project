@@ -10,11 +10,12 @@
 <html>
 <head>
         <title>Signup</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/scss/css/register.css"/>
 </head>
 <body>
-<div class="mainsection">
+<div class="mainsection" id="mainbody">
     <div class="loginmaindivbox">
         <div class="loginbox">
             <div class="loginitem">
@@ -35,11 +36,16 @@
         </div>
     </div>
     <div class="maindivbox">
-        <div class="bacground">
+        <div data-aos="zoom-out" class="bacground">
             <img src="assets/resourses/image2.png">
         </div>
     </div>
     <script src="assets/js/showpassword.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="assets/js/mainpageanimation.js"></script>
 </div>
 </body>
 </html>

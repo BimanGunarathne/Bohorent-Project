@@ -15,6 +15,7 @@
         <title>Inventory</title>
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" type="text/css" href="assets/scss/css/inventory.css"/>
     </layout:put>
     <layout:put block="inventory" type="REPLACE">
@@ -37,7 +38,7 @@
                     </select>
                 </div>
                 <div class="products-view">
-                    <div class="product featured">
+                    <div data-aos="zoom-out" class="product featured">
                         <div class="product-image">
                             <img src="assets/resourses/item1.png" alt="Product 1">
                         </div>
@@ -50,7 +51,7 @@
                             <a href="item"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                    <div class="product new">
+                    <div data-aos="zoom-out" class="product new">
                         <div class="product-image">
                             <img src="assets/resourses/item2.png" alt="Product 2">
                         </div>
@@ -63,7 +64,7 @@
                             <a href="#"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                    <div class="product sale">
+                    <div data-aos="zoom-out" class="product sale">
                         <div class="product-image">
                             <img src="assets/resourses/item3.png" alt="Product 3">
                         </div>
@@ -76,7 +77,7 @@
                             <a href="#"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                    <div class="product sale">
+                    <div data-aos="zoom-out" class="product sale">
                         <div class="product-image">
                             <img src="assets/resourses/item3.png" alt="Product 3">
                         </div>
@@ -89,7 +90,7 @@
                             <a href="#"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                    <div class="product sale">
+                    <div data-aos="zoom-out" class="product sale">
                         <div class="product-image">
                             <img src="assets/resourses/item3.png" alt="Product 3">
                         </div>
@@ -102,7 +103,7 @@
                             <a href="#"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                    <div class="product sale">
+                    <div data-aos="zoom-out" class="product sale">
                         <div class="product-image">
                             <img src="assets/resourses/item3.png" alt="Product 3">
                         </div>

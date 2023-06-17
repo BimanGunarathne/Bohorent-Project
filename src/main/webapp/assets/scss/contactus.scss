@@ -5,6 +5,17 @@
   font-family: 'Ethereal', sans-serif;
 }
 
+#mainbody{
+  opacity: 0;
+  transform: scaleZ(1.2);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+#mainbody.animate{
+  opacity: 1;
+  transform: scaleZ(1);
+}
+
 .mainbody4{
   position: relative;
   width: 100%;

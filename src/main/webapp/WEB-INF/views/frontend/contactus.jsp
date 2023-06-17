@@ -14,6 +14,7 @@
     <layout:put block="contactuscss" type="REPLACE">
         <title>Contact Us</title>
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="assets/scss/css/contactus.css"/>
     </layout:put>
@@ -68,7 +69,7 @@
                     <div class="information-img">
                         <div class="img-box">
                             <div class="info-box">
-                                <div class="info">
+                                <div data-aos="zoom-out" class="info">
                                     <div class="left">
                                         <a href=""><i class="fas fa-map-marker-alt"></i>Orange, New Jersey</a>
                                         <a class="a" href=""><i class="fas fa-phone"></i>551-271-0471</a>

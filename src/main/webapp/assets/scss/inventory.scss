@@ -108,19 +108,6 @@
       flex-grow: 1;
     }
 
-    .product-image{
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-image img{
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .zoom-in{
-      transform: scale(1.2);
-    }
-
     .product .product-details {
       padding: 10px;
     }
@@ -185,5 +172,17 @@
         max-width: 400px;
       }
     }
+  }
+  .product-image{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-image img{
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .zoom-in{
+    transform: scale(1.2);
   }
 }

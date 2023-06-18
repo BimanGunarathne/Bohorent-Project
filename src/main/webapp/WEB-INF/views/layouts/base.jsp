@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/scss/css/base.css"/>
     <link rel="stylesheet" type="text/css" href="assets/scss/css/navbar.css"/>
+    <link rel="icon" href="assets/resourses/Bohorenticon.ico" type="image/x-icon">
     <layout:block name="stylecss"></layout:block>
     <layout:block name="packagecss"></layout:block>
     <layout:block name="inventorycss"></layout:block>

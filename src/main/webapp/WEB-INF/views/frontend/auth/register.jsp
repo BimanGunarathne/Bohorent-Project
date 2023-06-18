@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/scss/css/register.css"/>
+    <link rel="icon" href="assets/resourses/Bohorenticon.ico" type="image/x-icon">
 </head>
 <body>
 <div class="mainsection" id="mainbody">

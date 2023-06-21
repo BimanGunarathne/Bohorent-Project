@@ -13,9 +13,9 @@ import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-@Routes
+@Routes(value = "/login")
 public class LoginController {
-    @Route("/login")
+    @Route
     public String get(HttpServletRequest request) {
         return "frontend/auth/login.jsp";
     }
@@ -39,6 +39,7 @@ public class LoginController {
                 HttpSession s = request.getSession();
                 s.setAttribute("user", user.getId());
                 s.setAttribute("user_type", user.getUserType());
+
                 return "redirect:/";
             }
         }catch (NoResultException e){

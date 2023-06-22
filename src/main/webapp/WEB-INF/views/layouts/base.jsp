@@ -42,7 +42,7 @@
             <ul class="ulright">
                 <li><a href="/bohorent">Home</a></li>
                 <li><a href="/bohorent/packages">Packages</a></li>
-                <li><a href="/bohorent/inventory">Inventory</a></li>
+                <li><a href="/bohorent/items">Inventory</a></li>
                 <li><a href="/bohorent/contactus">Contact Us</a></li>
                 <li><a href="/bohorent/about">About</a></li>
                 <li><a href="login">Login</a></li>
@@ -65,7 +65,7 @@
 
 </layout:block>
 
-<layout:block name="inventory">
+<layout:block name="items">
 
 </layout:block>
 <layout:block name="contactus">
@@ -100,7 +100,7 @@
                 <ul>
                     <li><a href="/bohorent">Home</a></li>
                     <li><a href="/bohorent/packages">Packages</a></li>
-                    <li><a href="/bohorent/inventory">Inventory</a></li>
+                    <li><a href="/bohorent/items">Inventory</a></li>
                     <li><a href="/bohorent/contactus">Contact Us</a></li>
                     <li><a href="/bohorent/about">About</a></li>
                 </ul>

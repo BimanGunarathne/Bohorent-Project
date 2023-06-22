@@ -24,7 +24,7 @@
                     <div class="imagetext">
                         <h1>Packages</h1>
                         <p>Boho rent provides few package deals depending on number of guest and your needs. Let us help you create an unforgettable memory with your love ones!
-                            First 6 packages of Bohemia and Vintage, we come to your location to set up the decoration. Last 3 packages are rentals vintage furniture, no decoration or silverware included.<br>If you are looking for individual items, please look at our inventory section.
+                            First 6 packages of Bohemia and Vintage, we come to your location to set up the decoration. Last 3 packages are rentals vintage furniture, no decoration or silverware included.<br>If you are looking for individual items, please look at our items section.
                         </p>
                     </div>
                     <div class="image">

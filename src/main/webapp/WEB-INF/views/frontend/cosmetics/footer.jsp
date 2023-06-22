@@ -34,7 +34,7 @@
 <%--        <ul>--%>
 <%--          <li><a href="">Home</a></li>--%>
 <%--          <li><a href="">Packages</a></li>--%>
-<%--          <li><a href="">Inventory</a></li>--%>
+<%--          <li><a href="">Items</a></li>--%>
 <%--          <li><a href="">Contact Us</a></li>--%>
 <%--          <li><a href="">About</a></li>--%>
 <%--        </ul>--%>

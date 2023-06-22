@@ -25,6 +25,7 @@ public class RoutConfig extends RoutesFilter {
         RoutingTable routing = new RoutingTable(configuration);
         routing
                 .add(new HomeController())
+                .add(new InventoryController())
                 .add(new LoginController())
                 .add(new RegisterController())
                 .add(new AdminController())

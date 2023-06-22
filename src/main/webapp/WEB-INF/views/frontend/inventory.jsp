@@ -16,9 +16,9 @@
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" type="text/css" href="assets/scss/css/inventory.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/scss/css/items.css"/>
     </layout:put>
-    <layout:put block="inventory" type="REPLACE">
+    <layout:put block="items" type="REPLACE">
         <div class="mainbody3" id="mainbody">
             <section class="section">
                 <div class="filter-section">
@@ -37,7 +37,7 @@
                         <option value="sale">Name Z-A</option>
                     </select>
                 </div>
-                <div class="products-view">
+                <div class="items-view">
                     <div data-aos="zoom-out" class="product featured">
                         <div class="product-image">
                             <img src="assets/resourses/item1.png" alt="Product 1">

@@ -31,7 +31,7 @@
 <%--            <ul class="ulright">--%>
 <%--                <li><a href="/bohorent">Home</a></li>--%>
 <%--                <li><a href="/bohorent/packages">Packages</a></li>--%>
-<%--                <li><a href="/bohorent/Inventory">Inventory</a></li>--%>
+<%--                <li><a href="/bohorent/Items">Items</a></li>--%>
 <%--                <li><a href="/bohorent/contactus">Contact Us</a></li>--%>
 <%--                <li><a href="/bohorent/about">About</a></li>--%>
 <%--                <li><a href="login">Login</a></li>--%>

@@ -10,5 +10,6 @@
         <property name="hibernate.show_sql">true</property>
 
         <mapping class="com.bohorent.shop.entity.User"/>
+        <mapping class="com.bohorent.shop.entity.Items"/>
     </session-factory>
 </hibernate-configuration>

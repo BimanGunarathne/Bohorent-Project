@@ -21,36 +21,38 @@
             <div class="leftlayout">
                 <div class="info">
                     <h1>Add Item</h1>
-                    <section class="section1">
-                        <div class="div">
-                            <label>Item Name</label>
-                            <input type="text">
-                        </div>
-                        <div class="div input-right">
-                            <label>Quantity</label>
-                            <input type="number">
-                        </div>
-                    </section>
-                    <section class="section1">
-                        <div class="div">
-                            <label>Retail Price</label>
-                            <input type="text">
-                        </div>
-                        <div class="div input-right">
-                            <label>Selling Price</label>
-                            <input type="text">
-                        </div>
-                    </section>
-                    <section class="section2">
-                        <label for="upload-input" id="upload-label">Choose Image</label>
-                        <input type="file" id="upload-input" accept="image/*" onchange="previewImage(event)">
-                        <label>Details*</label>
-                        <textarea id="message" name="message" rows="4" cols="30"></textarea>
-                    </section>
-                    <section class="section3">
-                        <button class="save left" type="submit">Save</button>
-                        <button class="delete right" type="submit">Delete</button>
-                    </section>
+                    <form action="additem/add-items" method="post">
+                        <section class="section1">
+                            <div class="div">
+                                <label>Item Name</label>
+                                <input type="text" name="iname">
+                            </div>
+                            <div class="div input-right">
+                                <label>Quantity</label>
+                                <input type="number" name="qty">
+                            </div>
+                        </section>
+                        <section class="section1">
+                            <div class="div">
+                                <label>Retail Price</label>
+                                <input type="text" name="">
+                            </div>
+                            <div class="div input-right">
+                                <label>Selling Price</label>
+                                <input type="text" name="iprice">
+                            </div>
+                        </section>
+                        <section class="section2">
+                            <label for="upload-input" id="upload-label">Choose Image</label>
+                            <input type="file" id="upload-input" accept="image/*" onchange="previewImage(event)">
+                            <label>Details*</label>
+                            <textarea id="message" name="idescription" rows="4" cols="30"></textarea>
+                        </section>
+                        <section class="section3">
+                            <button class="save left" type="submit">Save</button>
+                            <button class="delete right" type="submit">Delete</button>
+                        </section>
+                    </form>
                 </div>
                 <div class="rightlayout">
                     <div class="image-view">

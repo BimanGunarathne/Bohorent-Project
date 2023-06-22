@@ -1,12 +1,13 @@
 package com.bohorent.shop.entity;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity(name = "inventory")
-public class Inventory {
+@Entity(name = "items")
+public class Items {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -14,7 +15,7 @@ public class Inventory {
     private String idescription;
     private String qty;
     private String iimage;
-    private double price;
+    private double iprice;
 
     public Long getId() {
         return id;
@@ -56,11 +57,11 @@ public class Inventory {
         this.iimage = iimage;
     }
 
-    public double getPrice() {
-        return price;
+    public double getIprice() {
+        return iprice;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setIprice(double iprice) {
+        this.iprice = iprice;
     }
 }

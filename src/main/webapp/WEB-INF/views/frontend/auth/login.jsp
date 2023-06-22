@@ -21,7 +21,7 @@
             <div class="loginitem">
                 <h1 class="logo"><a class="logo" href="/bohorent">BOHO<br>RENT</a></h1>
                 <h1 class="">Login</h1>
-                <form action="" method="post">
+                <form action="/bohorent/profile" method="post">
                     <input class="email" type="text" placeholder="Username" required>
                     <input class="password" type="password" id="password" placeholder="Password" required>
                     <div class="checkbox">

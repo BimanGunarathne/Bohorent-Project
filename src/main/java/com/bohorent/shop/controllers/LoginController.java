@@ -29,20 +29,20 @@ public class LoginController {
         Query<User> query = session.createQuery("from users where email=:e and password=:p", User.class);
         query.setParameter("e", email);
         query.setParameter("p", Encryption.encrypt(password));
-        try{
+        try {
             User user = query.getSingleResult();
-            if(!user.isActive()){
+            if (!user.isActive()) {
                 return "redirect:/";
             } else if (user.getEmail_verified_at() == null) {
                 return "redirect:/";
-            }else {
+            } else {
                 HttpSession s = request.getSession();
                 s.setAttribute("user", user.getId());
                 s.setAttribute("user_type", user.getUserType());
 
                 return "redirect:/";
             }
-        }catch (NoResultException e){
+        } catch (NoResultException e) {
             request.getSession().setAttribute("error", "Invalid Username or Password!");
             return "redirect:/login";
         }

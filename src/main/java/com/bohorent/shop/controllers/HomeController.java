@@ -22,6 +22,11 @@ public class HomeController {
     public String packages(HttpServletRequest request) {
         return "frontend/packages.jsp";
     }
+    @Route("/inventory")
+    public String inventory(HttpServletRequest request) {
+        return "frontend/inventory.jsp";
+    }
+
     @Route("/contactus")
     public String contactus(HttpServletRequest request) {
         return "frontend/contactus.jsp";

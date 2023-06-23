@@ -1,4 +1,4 @@
-<jsp:include page="cosmetics/navbar.jsp"/>
+<%--<jsp:include page="cosmetics/navbar.jsp"/>--%>
 <%--
   Created by IntelliJ IDEA.
   User: biman
@@ -8,15 +8,16 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--<html>--%>
 <%--<head>--%>
 <layout:extends name="base">
     <layout:put block="inventorycss" type="REPLACE">
         <title>Inventory</title>
         <link href="https://fonts.cdnfonts.com/css/ethereal" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" type="text/css" href="assets/scss/css/items.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/scss/css/inventory.css"/>
     </layout:put>
     <layout:put block="items" type="REPLACE">
         <div class="mainbody3" id="mainbody">
@@ -38,19 +39,21 @@
                     </select>
                 </div>
                 <div class="items-view">
-                    <div data-aos="zoom-out" class="product featured">
-                        <div class="product-image">
-                            <img src="assets/resourses/item1.png" alt="Product 1">
+                    <c:forEach items="${items}" var="items">
+                        <div data-aos="zoom-out" class="product featured">
+                            <div class="product-image">
+                                <img src="${items.iimage}" alt="Product 1">
+                            </div>
+                            <div class="product-details">
+                                <h1 class="product-title">${items.iname}</h1>
+                                <p class="product-price">${items.iprice}</p>
+                                <button class="buy-button">Add to cart</button>
+                            </div>
+                            <div class="item-view">
+                                <a href="item"><i class="fas fa-eye"></i></a>
+                            </div>
                         </div>
-                        <div class="product-details">
-                            <h1 class="product-title">Boho-chic cushion</h1>
-                            <p class="product-price">$10.00</p>
-                            <button class="buy-button">Add to cart</button>
-                        </div>
-                        <div class="item-view">
-                            <a href="item"><i class="fas fa-eye"></i></a>
-                        </div>
-                    </div>
+                    </c:forEach>
                     <div data-aos="zoom-out" class="product new">
                         <div class="product-image">
                             <img src="assets/resourses/item2.png" alt="Product 2">

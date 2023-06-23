@@ -39,14 +39,14 @@
                     </select>
                 </div>
                 <div class="items-view">
-                    <c:forEach items="${items}" var="items">
+                    <c:forEach items="${requestScope.items}" var="item">
                         <div data-aos="zoom-out" class="product featured">
                             <div class="product-image">
-                                <img src="${items.iimage}" alt="Product 1">
+                                <img src="${item.iimage}" alt="Product 1">
                             </div>
                             <div class="product-details">
-                                <h1 class="product-title">${items.iname}</h1>
-                                <p class="product-price">${items.iprice}</p>
+                                <h1 class="product-title">${item.iname}</h1>
+                                <p class="product-price">${item.iprice}</p>
                                 <button class="buy-button">Add to cart</button>
                             </div>
                             <div class="item-view">
@@ -54,71 +54,6 @@
                             </div>
                         </div>
                     </c:forEach>
-                    <div data-aos="zoom-out" class="product new">
-                        <div class="product-image">
-                            <img src="assets/resourses/item2.png" alt="Product 2">
-                        </div>
-                        <div class="product-details">
-                            <h1 class="product-title">Boho fringe shool</h1>
-                            <p class="product-price">$35.00</p>
-                            <button class="buy-button">Add to cart</button>
-                        </div>
-                        <div class="item-view">
-                            <a href="#"><i class="fas fa-eye"></i></a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-out" class="product sale">
-                        <div class="product-image">
-                            <img src="assets/resourses/item3.png" alt="Product 3">
-                        </div>
-                        <div class="product-details">
-                            <h1 class="product-title">Dark yellow cotton bride puff</h1>
-                            <p class="product-price">$15.00</p>
-                            <button class="buy-button">Add to cart</button>
-                        </div>
-                        <div class="item-view">
-                            <a href="#"><i class="fas fa-eye"></i></a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-out" class="product sale">
-                        <div class="product-image">
-                            <img src="assets/resourses/item3.png" alt="Product 3">
-                        </div>
-                        <div class="product-details">
-                            <h1 class="product-title">Cotton bride puff</h1>
-                            <p class="product-price">$12.00</p>
-                            <button class="buy-button">Add to cart</button>
-                        </div>
-                        <div class="item-view">
-                            <a href="#"><i class="fas fa-eye"></i></a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-out" class="product sale">
-                        <div class="product-image">
-                            <img src="assets/resourses/item3.png" alt="Product 3">
-                        </div>
-                        <div class="product-details">
-                            <h1 class="product-title">Pumpkin pillow</h1>
-                            <p class="product-price">$10.00</p>
-                            <button class="buy-button">Add to cart</button>
-                        </div>
-                        <div class="item-view">
-                            <a href="#"><i class="fas fa-eye"></i></a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-out" class="product sale">
-                        <div class="product-image">
-                            <img src="assets/resourses/item3.png" alt="Product 3">
-                        </div>
-                        <div class="product-details">
-                            <h1 class="product-title">Green pumpkin pilow</h1>
-                            <p class="product-price">$10.00</p>
-                            <button class="buy-button">Add to cart</button>
-                        </div>
-                        <div class="item-view">
-                            <a href="#"><i class="fas fa-eye"></i></a>
-                        </div>
-                    </div>
                 </div>
             </section>
                 <%--        <jsp:include page="cosmetics/footer.jsp"/>--%>

@@ -13,20 +13,8 @@ import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-@Routes(value = "/additem")
+@Routes
 public class AddItemController {
-    @Route(value = "/inventory", respondsToMethods = {HttpMethod.GET})
-    public String get(HttpServletRequest request) {
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        Query query = session.createQuery("from items");
-        try{
-            List<Items> items = query.list();
-            request.getSession().setAttribute("items", items);
-        }catch (NoResultException e){
-
-        }
-        return "frontend/inventory.jsp";
-    }
     @Route(value = "/add-items", respondsToMethods = {HttpMethod.POST})
     public String addItems(HttpServletRequest request) {
         Session session = HibernateUtil.getSessionFactory().openSession();

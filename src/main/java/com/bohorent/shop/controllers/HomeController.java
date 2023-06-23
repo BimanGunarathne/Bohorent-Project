@@ -1,9 +1,15 @@
 package com.bohorent.shop.controllers;
 
+import com.bohorent.shop.entity.Items;
+import com.bohorent.shop.util.HibernateUtil;
 import org.baswell.routes.Route;
 import org.baswell.routes.Routes;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
 
+import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Routes
 public class HomeController {
@@ -22,8 +28,18 @@ public class HomeController {
     public String packages(HttpServletRequest request) {
         return "frontend/packages.jsp";
     }
+
     @Route("/inventory")
     public String inventory(HttpServletRequest request) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Query query = session.createQuery("select it from Items it");
+        try{
+            List<Items> items = query.list();
+            request.setAttribute("items", items);
+            System.out.println(items);
+        }catch (NoResultException e){
+            System.out.println("no result");
+        }
         return "frontend/inventory.jsp";
     }
 

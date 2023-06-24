@@ -42,11 +42,11 @@
                     <c:forEach items="${requestScope.items}" var="item">
                         <div data-aos="zoom-out" class="product featured">
                             <div class="product-image">
-                                <img src="assets/img/${item.iimage}" alt="Product 1">
+                                <img src="assets/resourses/${item.iimage}" alt="Product 1">
                             </div>
                             <div class="product-details">
                                 <h1 class="product-title">${item.iname}</h1>
-                                <p class="product-price">$${item.iprice}</p>
+                                <p class="product-price">$ ${item.iprice}</p>
                                 <button class="buy-button">Add to cart</button>
                             </div>
                             <div class="item-view">

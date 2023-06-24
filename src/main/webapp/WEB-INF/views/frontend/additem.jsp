@@ -43,7 +43,7 @@
                             </div>
                         </section>
                         <section class="section2">
-                            <input type="file" id="iimage" accept="image/*" onchange="previewImage(event)">
+                            <input type="file" name="iimage" id="iimage" accept="image/*" onchange="previewImage(event)">
                             <label>Details*</label>
                             <textarea id="message" name="idescription" rows="4" cols="30"></textarea>
                         </section>

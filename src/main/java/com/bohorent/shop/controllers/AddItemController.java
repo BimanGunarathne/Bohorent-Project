@@ -21,6 +21,7 @@ public class AddItemController {
         items.setIname(request.getParameter("iname"));
         items.setIdescription(request.getParameter("idescription"));
         items.setQty(request.getParameter("qty"));
+        items.setIimage(request.getParameter("iimage"));
         items.setIprice(Double.parseDouble(request.getParameter("iprice")));
 
         Transaction transaction = session.beginTransaction();

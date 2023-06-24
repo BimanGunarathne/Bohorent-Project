@@ -7,13 +7,11 @@ import org.baswell.routes.Route;
 import org.baswell.routes.Routes;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 
-import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
-@Routes
+
+@Routes(value = "/additem")
 public class AddItemController {
     @Route(value = "/add-items", respondsToMethods = {HttpMethod.POST})
     public String addItems(HttpServletRequest request) {

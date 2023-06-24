@@ -43,8 +43,7 @@
                             </div>
                         </section>
                         <section class="section2">
-                            <label for="upload-input" id="upload-label">Choose Image</label>
-                            <input type="file" id="upload-input" accept="image/*" onchange="previewImage(event)">
+                            <input type="file" id="iimage" accept="image/*" onchange="previewImage(event)">
                             <label>Details*</label>
                             <textarea id="message" name="idescription" rows="4" cols="30"></textarea>
                         </section>

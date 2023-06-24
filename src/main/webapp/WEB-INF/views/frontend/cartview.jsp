@@ -15,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="assets/scss/css/cartview.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </layout:put>
-    <layout:put block="cartview" type="REPLACE">
+    <layout:put block="context" type="REPLACE">
         <div class="mainbodycart" id="mainbody">
             <h1>Cart View</h1>
             <div class="cart-container">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="checkoutbtn">
-                        <button id="checkout-btn">Checkout</button>
+                        <a class="button" href="/bohorent/checkout" id="checkout-btn">Checkout</a>
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="assets/scss/css/about.css"/>
     </layout:put>
-    <layout:put block="about" type="REPLACE">
+    <layout:put block="context" type="REPLACE">
         <div class="mainbody5" id="mainbody">
             <section class="main-section">
                 <div class="about">

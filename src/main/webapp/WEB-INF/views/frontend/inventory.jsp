@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="stylesheet" type="text/css" href="assets/scss/css/inventory.css"/>
     </layout:put>
-    <layout:put block="items" type="REPLACE">
+    <layout:put block="context" type="REPLACE">
         <div class="mainbody3" id="mainbody">
             <section class="section">
                 <div class="filter-section">

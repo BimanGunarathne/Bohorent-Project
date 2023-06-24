@@ -57,28 +57,8 @@
         </div>
     </nav>
 </header>
-<layout:block name="index">
+<layout:block name="context">
 
-</layout:block>
-
-<layout:block name="packages">
-
-</layout:block>
-
-<layout:block name="items">
-
-</layout:block>
-<layout:block name="contactus">
-
-</layout:block>
-<layout:block name="about">
-
-</layout:block>
-<layout:block name="signup">
-
-</layout:block>
-<layout:block name="cartview">
-    
 </layout:block>
 <footer class="footer">
     <div class="footer-top">

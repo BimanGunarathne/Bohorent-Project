@@ -7,12 +7,30 @@ import org.baswell.routes.Route;
 import org.baswell.routes.Routes;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
+import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 
 @Routes(value = "/additem")
 public class AddItemController {
+    Session session = HibernateUtil.getSessionFactory().openSession();
+    @Route
+    public String get(HttpServletRequest request) {
+        Query query = session.createQuery("select it from Items it");
+        try{
+            List<Items> items = query.list();
+            request.setAttribute("items", items);
+            System.out.println(items);
+        }catch (
+                NoResultException e){
+            System.out.println("no result");
+        }
+        return "frontend/additem.jsp";
+    }
+
     @Route(value = "/add-items", respondsToMethods = {HttpMethod.POST})
     public String addItems(HttpServletRequest request) {
         Session session = HibernateUtil.getSessionFactory().openSession();

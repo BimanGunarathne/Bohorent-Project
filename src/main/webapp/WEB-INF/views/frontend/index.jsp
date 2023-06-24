@@ -19,7 +19,7 @@
     </layout:put>
     <%--</head>--%>
     <%--<body>--%>
-    <layout:put block="index" type="REPLACE">
+    <layout:put block="context" type="REPLACE">
         <div class="mainbody" id="mainbody" >
             <section class="section section1">
                 <div class="videobox">

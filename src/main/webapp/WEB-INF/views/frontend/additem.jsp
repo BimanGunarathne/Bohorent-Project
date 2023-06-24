@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="cosmetics/adminnavbar.jsp"/>
 <%--
   Created by IntelliJ IDEA.
@@ -84,22 +85,24 @@
                             <th>ID</th>
                             <th>Item Name</th>
                             <th>Quantity</th>
-                            <th>Retail Price</th>
+                            <th>Image</th>
                             <th>Selling Price</th>
                             <th></th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Item 1</td>
-                            <td>10</td>
-                            <td>$20</td>
-                            <td>$15</td>
-                            <td>
-                                <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
-                            </td>
-                        </tr>
+                        <c:forEach items="${requestScope.items}" var="item">
+                            <tr>
+                                <td>${item.id}</td>
+                                <td>${item.iname}</td>
+                                <td>${item.qty}</td>
+                                <td><img style="object-fit:cover; width: 100px; height: 100px" src="assets/resourses/${item.iimage}"></td>
+                                <td>${item.iprice}</td>
+                                <td>
+                                    <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                        </c:forEach>
                         </tbody>
                     </table>
                 </div>

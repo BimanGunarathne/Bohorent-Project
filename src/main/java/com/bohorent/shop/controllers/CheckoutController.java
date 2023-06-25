@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 public class CheckoutController {
     @Route("/checkout")
     public String checkout(HttpServletRequest request) {
+
         return "frontend/cosmetics/checkout.jsp";
     }
 }

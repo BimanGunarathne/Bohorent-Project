@@ -3,6 +3,11 @@ const stripe = Stripe("pk_test_51NL9IUHHIq2FfDPBOws2iAjU9zg3v4eD14ctSleSdTY9P4r5
 
 // The items the customer wants to buy
 const items = [{ id: "xl-tshirt" }];
+const appearance = { /* appearance */ };
+const options = { /* options */ };
+const elements = stripe.elements({ clientSecret, appearance });
+const paymentElement = elements.create('payment', options);
+paymentElement.mount('#payment-element');
 
 let elements;
 

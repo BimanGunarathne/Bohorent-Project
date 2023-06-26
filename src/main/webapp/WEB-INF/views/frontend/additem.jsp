@@ -44,7 +44,8 @@
                             </div>
                         </section>
                         <section class="section2">
-                            <input type="file" name="iimage" id="iimage" accept="image/*" onchange="previewImage(event)">
+                            <input type="file" name="iimage" id="iimage" accept="image/*"
+                                   onchange="previewImage(event)">
                             <label>Details*</label>
                             <textarea id="message" name="idescription" rows="4" cols="30"></textarea>
                         </section>
@@ -96,10 +97,13 @@
                                 <td>${item.id}</td>
                                 <td>${item.iname}</td>
                                 <td>${item.qty}</td>
-                                <td><img style="object-fit:cover; width: 100px; height: 100px" src="assets/resourses/${item.iimage}"></td>
+                                <td><img style="object-fit:cover; width: 100px; height: 100px"
+                                         src="assets/resourses/${item.iimage}"></td>
                                 <td>${item.iprice}</td>
                                 <td>
-                                    <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
+                                    <form action="additem/delete-items" method="post">
+                                        <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
+                                    </form>
                                 </td>
                             </tr>
                         </c:forEach>

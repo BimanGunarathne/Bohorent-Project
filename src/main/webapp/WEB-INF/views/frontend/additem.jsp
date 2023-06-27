@@ -101,7 +101,7 @@
                                          src="assets/resourses/${item.iimage}"></td>
                                 <td>${item.iprice}</td>
                                 <td>
-                                    <form action="additem/delete-items" method="post">
+                                    <form action="additem/delete-item" method="post">
                                         <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
                                     </form>
                                 </td>

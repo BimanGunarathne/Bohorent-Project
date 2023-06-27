@@ -18,8 +18,17 @@
 </head>
 <body>
 <form id="payment-form">
-    <div id="card-element" class="form-control"></div>
-    <button type="submit" class="btn btn-primary">Pay</button>
+    <div id="link-authentication-element">
+        <!--Stripe.js injects the Link Authentication Element-->
+    </div>
+    <div id="payment-element">
+        <!--Stripe.js injects the Payment Element-->
+    </div>
+    <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay now</span>
+    </button>
+    <div id="payment-message" class="hidden"></div>
 </form>
 </body>
 </html>

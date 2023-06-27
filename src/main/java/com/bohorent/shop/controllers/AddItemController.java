@@ -6,16 +6,11 @@ import org.baswell.routes.HttpMethod;
 import org.baswell.routes.Route;
 import org.baswell.routes.Routes;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import javax.persistence.NoResultException;
-import javax.security.auth.login.Configuration;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.util.List;
 
 

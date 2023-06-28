@@ -11,15 +11,13 @@ import org.hibernate.query.Query;
 
 import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.util.List;
-
 
 
 @Routes(value = "/additem")
 public class AddItemController {
     Session session = HibernateUtil.getSessionFactory().openSession();
+
     @Route
     public String get(HttpServletRequest request) {
         Query query = session.createQuery("select it from Items it");
@@ -52,28 +50,6 @@ public class AddItemController {
         return "redirect:/additem";
     }
 
-//    @Route(value = "/delete-item", respondsToMethods = {HttpMethod.POST})
-    public void deleteItem(Long id, HttpServletResponse response) throws IOException{
-        Session session1 = HibernateUtil.getSessionFactory().getCurrentSession();
-        Transaction transaction = null;
-        try{
-            transaction = session1.beginTransaction();
-            Items items = session1.get(Items.class, id);
-            if (items != null) {
-                session1.delete(items);
-                System.out.println("Deleted Successfully");
-            }else {
-                System.out.println("Row not found: " + id);
-            }
-            transaction.commit();
-            response.sendRedirect("/additem");
-        }catch (Exception e){
-            if (transaction != null){
-                transaction.rollback();
-            }
-            e.printStackTrace();
-        }finally {
-            session1.close();
-        }
-    }
+
+
 }

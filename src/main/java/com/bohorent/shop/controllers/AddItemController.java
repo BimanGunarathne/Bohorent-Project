@@ -10,12 +10,13 @@ import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import javax.persistence.NoResultException;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 
 @Routes(value = "/additem")
-public class AddItemController {
+public class AddItemController extends HttpServlet {
     Session session = HibernateUtil.getSessionFactory().openSession();
 
     @Route

@@ -12,6 +12,8 @@ import org.hibernate.query.Query;
 import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 
@@ -50,7 +52,20 @@ public class AddItemController extends HttpServlet {
 
         return "redirect:/additem";
     }
-
-
-
+    @Route(value = "/delete-items", respondsToMethods = {HttpMethod.POST})
+    public String deleteItem(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        long  id = Long.parseLong(request.getParameter("id"));
+        try (Session session1 = HibernateUtil.getSessionFactory().openSession()){
+            Transaction transaction = session1.beginTransaction();
+            Items items = session1.get(Items.class, id);
+            if (items != null) {
+                session1.delete(items);
+                transaction.commit();
+            }
+            response.sendRedirect(request.getContextPath() +"/additem");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

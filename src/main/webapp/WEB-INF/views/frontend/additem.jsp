@@ -79,37 +79,37 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
-                <form action="additem/delete-item" method="post">
-                    <div class="table-container">
-                        <table id="data-table">
-                            <thead>
+                <div class="table-container">
+                    <table id="data-table">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Image</th>
+                            <th>Selling Price</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <c:forEach items="${requestScope.items}" var="item">
                             <tr>
-                                <th>ID</th>
-                                <th>Item Name</th>
-                                <th>Quantity</th>
-                                <th>Image</th>
-                                <th>Selling Price</th>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <c:forEach items="${requestScope.items}" var="item">
-                                <tr>
-                                    <td>${item.id}</td>
-                                    <td>${item.iname}</td>
-                                    <td>${item.qty}</td>
-                                    <td><img style="object-fit:cover; width: 100px; height: 100px"
-                                             src="assets/resourses/${item.iimage}"></td>
-                                    <td>${item.iprice}</td>
-                                    <td>
+                                <td>${item.id}</td>
+                                <td>${item.iname}</td>
+                                <td>${item.qty}</td>
+                                <td><img style="object-fit:cover; width: 100px; height: 100px"
+                                         src="assets/resourses/${item.iimage}"></td>
+                                <td>${item.iprice}</td>
+                                <td>
+                                    <form action="additem/delete-items" method="post">
                                         <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
-                                    </td>
-                                </tr>
-                            </c:forEach>
-                            </tbody>
-                        </table>
-                    </div>
-                </form>
+                                    </form>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>

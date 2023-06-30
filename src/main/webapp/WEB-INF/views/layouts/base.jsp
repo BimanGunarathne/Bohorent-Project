@@ -21,7 +21,6 @@
     <layout:block name="aboutcss"></layout:block>
     <layout:block name="cartviewcss"></layout:block>
     <link rel="stylesheet" type="text/css" href="assets/scss/css/footer.css"/>
-
 </head>
 <body>
 <header>

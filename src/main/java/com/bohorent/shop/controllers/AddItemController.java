@@ -69,6 +69,6 @@ public class AddItemController extends HttpServlet {
                 e.printStackTrace();
             }
         }
-        return null;
+        return "redirect:/additem";
     }
 }

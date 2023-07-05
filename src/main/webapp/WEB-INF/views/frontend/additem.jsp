@@ -52,7 +52,6 @@
                         <section class="section3">
                             <button class="save left" type="submit">Save</button>
                             <button class="save mid" type="submit">Update</button>
-                            <button class="delete right" type="submit">Delete</button>
                         </section>
                     </form>
                 </div>

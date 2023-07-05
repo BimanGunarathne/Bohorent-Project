@@ -52,22 +52,29 @@ public class AddItemController extends HttpServlet {
 
         return "redirect:/additem";
     }
+
     @Route(value = "/delete-items", respondsToMethods = {HttpMethod.POST})
-    public String deleteItem(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String itemId = request.getParameter("itemId");
-        if (itemId != null && !itemId.isEmpty()) {
-            long id = Long.parseLong(itemId);
-            try (Session session1 = HibernateUtil.getSessionFactory().openSession()){
-                Transaction transaction = session1.beginTransaction();
-                Items items = session1.get(Items.class, id);
-                if (items != null) {
+    public String deleteItems(HttpServletRequest request) {
+        Session session1 = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction1 = session1.beginTransaction();
+        String id = request.getParameter("id");
+        try{
+            if(id != null){
+                Long id1 = Long.parseLong(id);
+                Items items = session1.get(Items.class, id1);
+                if(items != null){
                     session1.delete(items);
-                    transaction.commit();
+                    transaction1.commit();
+                }else {
+                    System.out.println("Item not found");
                 }
-                response.sendRedirect(request.getContextPath() +"/additem");
-            }catch (Exception e){
-                e.printStackTrace();
+            }else{
+                System.out.println("Item not found");
             }
+        }catch (NumberFormatException  e) {
+            e.printStackTrace();
+        } finally {
+            session1.close();
         }
         return "redirect:/additem";
     }

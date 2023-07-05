@@ -102,6 +102,7 @@
                                 <td>${item.iprice}</td>
                                 <td>
                                     <form action="additem/delete-items" method="post">
+                                        <input type="hidden" name="id" value="${item.getId()}">
                                         <button class="delete-row-btn"><i class="fas fa-trash-alt"></i></button>
                                     </form>
                                 </td>

@@ -12,8 +12,6 @@ import org.hibernate.query.Query;
 import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.util.List;
 
 
@@ -55,27 +53,25 @@ public class AddItemController extends HttpServlet {
 
     @Route(value = "/delete-items", respondsToMethods = {HttpMethod.POST})
     public String deleteItems(HttpServletRequest request) {
-        Session session1 = HibernateUtil.getSessionFactory().openSession();
-        Transaction transaction1 = session1.beginTransaction();
-        String id = request.getParameter("id");
-        try{
-            if(id != null){
-                Long id1 = Long.parseLong(id);
-                Items items = session1.get(Items.class, id1);
-                if(items != null){
-                    session1.delete(items);
-                    transaction1.commit();
-                }else {
-                    System.out.println("Item not found");
-                }
-            }else{
-                System.out.println("Item not found");
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        String idParam = request.getParameter("id");
+        if (idParam == null) {
+            return "redirect:/additem";
+        }
+        Long id = Long.parseLong(idParam);
+        Transaction transaction = session.beginTransaction();
+        try {
+            Items items = session.get(Items.class, id);
+            if (items != null) {
+                session.delete(items);
             }
-        }catch (NumberFormatException  e) {
-            e.printStackTrace();
+            transaction.commit();
+        } catch (Exception e) {
+            transaction.rollback();
         } finally {
-            session1.close();
+            session.close();
         }
         return "redirect:/additem";
     }
+
 }

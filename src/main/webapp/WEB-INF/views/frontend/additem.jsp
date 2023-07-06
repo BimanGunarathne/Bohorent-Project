@@ -22,36 +22,37 @@
             <div class="leftlayout">
                 <div class="info">
                     <h1>Add Item</h1>
-                    <form action="additem/add-items" method="post">
+                    <form id="myForm" method="post">
                         <section class="section1">
+                            <input type="hidden" name="id" value="${request.getParameter("id")}">
                             <div class="div">
                                 <label>Item Name</label>
-                                <input type="text" name="iname">
+                                <input type="text" name="iname" value="${request.getParameter("iname")}">
                             </div>
                             <div class="div input-right">
                                 <label>Quantity</label>
-                                <input type="number" name="qty">
+                                <input type="number" name="qty" value="${request.getParameter("qty")}">
                             </div>
                         </section>
                         <section class="section1">
                             <div class="div">
-                                <label>Retail Price</label>
+                                <label>Buying Price</label>
                                 <input type="text" name="">
                             </div>
                             <div class="div input-right">
                                 <label>Selling Price</label>
-                                <input type="text" name="iprice">
+                                <input type="text" name="iprice" value="${request.getParameter("iprice")}">
                             </div>
                         </section>
                         <section class="section2">
                             <input type="file" name="iimage" id="iimage" accept="image/*"
-                                   onchange="previewImage(event)">
+                                   onchange="previewImage(event)" value="${request.getParameter("iimage")}">
                             <label>Details*</label>
-                            <textarea id="message" name="idescription" rows="4" cols="30"></textarea>
+                            <textarea id="message" name="idescription" rows="4" cols="30">${request.getParameter("idescription")}</textarea>
                         </section>
                         <section class="section3">
-                            <button class="save left" type="submit">Save</button>
-                            <button class="save mid" type="submit">Update</button>
+                            <button class="save left" type="submit" onclick="submitForm('additem/add-items')">Save</button>
+                            <button class="save mid" type="submit" onclick="submitForm('additem/update-items')">Update</button>
                         </section>
                     </form>
                 </div>
@@ -92,7 +93,7 @@
                         </thead>
                         <tbody>
                         <c:forEach items="${requestScope.items}" var="item">
-                            <tr>
+                            <tr onclick="selectRow(this)">
                                 <td>${item.id}</td>
                                 <td>${item.iname}</td>
                                 <td>${item.qty}</td>
@@ -114,6 +115,36 @@
         </div>
     </section>
 </div>
+<script>
+    function submitForm(action) {
+        var form = document.getElementById("myForm");
+        form.action = action;
+        form.submit();
+    }
+</script>
+<script>
+    function selectRow(row) {
+        var rowData = row.cells;
+        var id = rowData[0].innerText;
+        var iname = rowData[1].innerText;
+        var qty = rowData[2].innerText;
+        var iimage = rowData[3].querySelector('img').src;
+        var iprice = rowData[4].innerText;
+
+        var form = document.getElementById("myForm");
+        var idField = form.querySelector("input[name='id']");
+        var inameField = form.querySelector("input[name='iname']");
+        var qtyField = form.querySelector("input[name='qty']");
+        var iimageField = form.querySelector("input[name='iimage']");
+        var ipriceField = form.querySelector("input[name='iprice']");
+
+        idField.value = id;
+        inameField.value = iname;
+        qtyField.value = qty;
+        iimageField.value = iimage;
+        ipriceField.value = iprice;
+    }
+</script>
 <script src="assets/js/usertable.js"></script>
 <script src="assets/js/itemimage.js"></script>
 <script src="assets/js/searchbar.js"></script>

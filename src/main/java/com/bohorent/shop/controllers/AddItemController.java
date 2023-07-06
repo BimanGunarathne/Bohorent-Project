@@ -74,4 +74,33 @@ public class AddItemController extends HttpServlet {
         return "redirect:/additem";
     }
 
+    @Route(value = "/update-items", respondsToMethods = {HttpMethod.POST})
+    public String updateItems(HttpServletRequest request) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Long id = Long.parseLong(request.getParameter("id"));
+        String iname = request.getParameter("iname");
+        String idescription = request.getParameter("idescription");
+        String qty = request.getParameter("qty");
+        String iimage = request.getParameter("iimage");
+        Double iprice = Double.parseDouble(request.getParameter("iprice"));
+
+        Transaction transaction = session.beginTransaction();
+        try {
+            Items items = session.get(Items.class, id);
+            if (items != null) {
+                items.setIname(iname);
+                items.setIdescription(idescription);
+                items.setQty(qty);
+                items.setIimage(iimage);
+                items.setIprice(iprice);
+                session.update(items);
+            }
+            transaction.commit();
+        } catch (Exception e) {
+            transaction.rollback();
+        } finally {
+            session.close();
+        }
+        return "redirect:/additem";
+    }
 }

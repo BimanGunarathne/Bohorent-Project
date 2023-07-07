@@ -130,6 +130,7 @@
         var qty = rowData[2].innerText;
         var iimage = rowData[3].querySelector('img').src;
         var iprice = rowData[4].innerText;
+        var idescription = rowData[5].querySelector('textarea').innerText;
 
         var form = document.getElementById("myForm");
         var idField = form.querySelector("input[name='id']");
@@ -137,12 +138,14 @@
         var qtyField = form.querySelector("input[name='qty']");
         var iimageField = form.querySelector("input[name='iimage']");
         var ipriceField = form.querySelector("input[name='iprice']");
+        var idescriptionField = form.querySelector("textarea[name='idescription']");
 
         idField.value = id;
         inameField.value = iname;
         qtyField.value = qty;
         iimageField.value = iimage;
         ipriceField.value = iprice;
+        idescriptionField.value = idescription;
     }
 </script>
 <script src="assets/js/usertable.js"></script>

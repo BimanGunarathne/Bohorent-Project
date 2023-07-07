@@ -18,7 +18,7 @@
         <div class="divleft">
             <ul class="ulleft">
                 <li><a href="/bohorent/packages">Packages</a></li>
-                <li><a href="/bohorent/items">Inventory</a></li>
+                <li><a href="/bohorent/items">Items</a></li>
                 <li><a href="/bohorent/contactus">Contact Us</a></li>
                 <li><a href="/bohorent/about">About</a></li>
             </ul>

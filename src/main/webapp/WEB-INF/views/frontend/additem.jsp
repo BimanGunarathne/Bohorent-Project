@@ -37,7 +37,7 @@
                         <section class="section1">
                             <div class="div">
                                 <label>Buying Price</label>
-                                <input type="text" name="ibuyprice" value="${request.getParameter}">
+                                <input type="text" name="ibuyprice" value="${request.getParameter("ibuyprice")}">
                             </div>
                             <div class="div input-right">
                                 <label>Selling Price</label>
@@ -127,26 +127,32 @@
     }
 </script>
 <script>
-    function selectRow(row) {
+    function selectRow(row){
         var rowData = row.cells;
         var id = rowData[0].innerText;
         var iname = rowData[1].innerText;
         var qty = rowData[2].innerText;
         var iimage = rowData[3].querySelector('img').src;
-        var iprice = rowData[4].innerText;
+        var idescription = rowData[4].innerText;
+        var ibuyprice = rowData[5].innerText;
+        var iprice = rowData[6].innerText;
 
         var form = document.getElementById("myForm");
         var idField = form.querySelector("input[name='id']");
         var inameField = form.querySelector("input[name='iname']");
         var qtyField = form.querySelector("input[name='qty']");
         var iimageField = form.querySelector("input[name='iimage']");
+        var idescriptionField = form.querySelector("input[name='idescription']");
+        var ibuypriceField = form.querySelector("input[name='ibuyprice']");
         var ipriceField = form.querySelector("input[name='iprice']");
 
         idField.value = id;
         inameField.value = iname;
         qtyField.value = qty;
-        iimageField.value = iimage;
+        ibuypriceField.value = ibuyprice;
         ipriceField.value = iprice;
+        iimageField.value = iimage;
+        idescriptionField.value = idescription;
     }
 </script>
 <script src="assets/js/usertable.js"></script>

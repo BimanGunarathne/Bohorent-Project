@@ -37,7 +37,7 @@
                         <section class="section1">
                             <div class="div">
                                 <label>Buying Price</label>
-                                <input type="text" name="">
+                                <input type="text" name="ibuyprice" value="${request.getParameter}">
                             </div>
                             <div class="div input-right">
                                 <label>Selling Price</label>
@@ -87,6 +87,8 @@
                             <th>Item Name</th>
                             <th>Quantity</th>
                             <th>Image</th>
+                            <th>Description</th>
+                            <th>Buying Price</th>
                             <th>Selling Price</th>
                             <th></th>
                         </tr>
@@ -99,6 +101,8 @@
                                 <td>${item.qty}</td>
                                 <td><img style="object-fit:cover; width: 100px; height: 100px"
                                          src="assets/resourses/${item.iimage}"></td>
+                                <td>${item.idescription}</td>
+                                <td>${item.ibuyprice}</td>
                                 <td>${item.iprice}</td>
                                 <td>
                                     <form action="additem/delete-items" method="post">
@@ -130,7 +134,6 @@
         var qty = rowData[2].innerText;
         var iimage = rowData[3].querySelector('img').src;
         var iprice = rowData[4].innerText;
-        var idescription = rowData[5].querySelector('textarea').innerText;
 
         var form = document.getElementById("myForm");
         var idField = form.querySelector("input[name='id']");
@@ -138,14 +141,12 @@
         var qtyField = form.querySelector("input[name='qty']");
         var iimageField = form.querySelector("input[name='iimage']");
         var ipriceField = form.querySelector("input[name='iprice']");
-        var idescriptionField = form.querySelector("textarea[name='idescription']");
 
         idField.value = id;
         inameField.value = iname;
         qtyField.value = qty;
         iimageField.value = iimage;
         ipriceField.value = iprice;
-        idescriptionField.value = idescription;
     }
 </script>
 <script src="assets/js/usertable.js"></script>

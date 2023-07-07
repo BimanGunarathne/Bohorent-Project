@@ -42,6 +42,7 @@ public class AddItemController extends HttpServlet {
         items.setQty(request.getParameter("qty"));
         items.setIimage(request.getParameter("iimage"));
         items.setIprice(Double.parseDouble(request.getParameter("iprice")));
+        items.setIbuyprice(request.getParameter("ibuyprice"));
 
         Transaction transaction = session.beginTransaction();
         session.save(items);
@@ -82,6 +83,7 @@ public class AddItemController extends HttpServlet {
         String idescription = request.getParameter("idescription");
         String qty = request.getParameter("qty");
         String iimage = request.getParameter("iimage");
+        String ibuyprice = request.getParameter("ibuyprice");
         Double iprice = Double.parseDouble(request.getParameter("iprice"));
 
         Transaction transaction = session.beginTransaction();
@@ -92,6 +94,7 @@ public class AddItemController extends HttpServlet {
                 items.setIdescription(idescription);
                 items.setQty(qty);
                 items.setIimage(iimage);
+                items.setIbuyprice(ibuyprice);
                 items.setIprice(iprice);
                 session.update(items);
             }

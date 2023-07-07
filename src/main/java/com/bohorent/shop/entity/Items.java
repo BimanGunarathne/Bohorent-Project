@@ -14,6 +14,7 @@ public class Items {
     private String qty;
     private String iimage;
     private double iprice;
+    private String ibuyprice;
 
     public Long getId() {
         return id;
@@ -61,5 +62,13 @@ public class Items {
 
     public void setIprice(double iprice) {
         this.iprice = iprice;
+    }
+
+    public String getIbuyprice() {
+        return ibuyprice;
+    }
+
+    public void setIbuyprice(String ibuyprice) {
+        this.ibuyprice = ibuyprice;
     }
 }

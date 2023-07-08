@@ -59,7 +59,7 @@
                 <div class="rightlayout">
                     <div class="image-view">
                         <h1 class="h1">Image Preview</h1>
-                        <div id="image-preview"></div>
+                        <div id="image-preview">${request.getParameter("iimage")}</div>
                     </div>
                     <div class="packagecount">
                         <div class="count">

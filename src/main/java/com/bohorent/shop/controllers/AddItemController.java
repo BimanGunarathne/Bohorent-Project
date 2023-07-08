@@ -10,8 +10,12 @@ import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import javax.persistence.NoResultException;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 
@@ -27,6 +31,22 @@ public class AddItemController extends HttpServlet {
             request.setAttribute("items", items);
             System.out.println(items);
         } catch (NoResultException e) {
+            System.out.println("no result");
+        }
+        return "frontend/additem.jsp";
+    }
+
+    @Route(value = "/search-items", respondsToMethods = {HttpMethod.POST})
+    public String searchItems(HttpServletRequest request) {
+        String searchQuery = request.getParameter("searchQuery");
+        Query query = session.createQuery("select it from Items it where it.iname like :searchQuery");
+        query.setParameter("searchQuery", "%" + searchQuery + "%");
+
+        try{
+            List<Items> items = query.list();
+            request.setAttribute("items", items);
+            System.out.println(items);
+        }catch (NoResultException e) {
             System.out.println("no result");
         }
         return "frontend/additem.jsp";

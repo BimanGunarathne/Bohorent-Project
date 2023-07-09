@@ -32,21 +32,7 @@ public class AddItemController extends HttpServlet {
         return "frontend/additem.jsp";
     }
 
-    @Route(value = "/search-items", respondsToMethods = {HttpMethod.POST})
-    public String searchItems(HttpServletRequest request) {
-        String searchQuery = request.getParameter("searchQuery");
-        Query query = session.createQuery("select it from Items it where it.iname like :searchQuery");
-        query.setParameter("searchQuery", "%" + searchQuery + "%");
 
-        try{
-            List<Items> items = query.list();
-            request.setAttribute("items", items);
-            System.out.println(items);
-        }catch (NoResultException e) {
-            System.out.println("no result");
-        }
-        return "frontend/additem.jsp";
-    }
 
     @Route(value = "/add-items", respondsToMethods = {HttpMethod.POST})
     public String addItems(HttpServletRequest request) {

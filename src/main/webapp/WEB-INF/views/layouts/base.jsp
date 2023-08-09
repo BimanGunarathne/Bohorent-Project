@@ -91,12 +91,12 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="assets/js/navbar.js"></script>
-<script type="text/javascript" src="assets/js/style.js"></script>
-<script type="text/javascript" src="assets/js/searchbar.js"></script>
-<script type="text/javascript" src="assets/js/mainpageanimation.js"></script>
-<script type="text/javascript" src="assets/js/cartview.js"></script>
-<script type="text/javascript" src="assets/js/itemzoom.js"></script>
+<script type="text/javascript" src="${BASE_URL}assets/js/navbar.js"></script>
+<script type="text/javascript" src="${BASE_URL}assets/js/style.js"></script>
+<script type="text/javascript" src="${BASE_URL}assets/js/searchbar.js"></script>
+<script type="text/javascript" src="${BASE_URL}assets/js/mainpageanimation.js"></script>
+<script type="text/javascript" src="${BASE_URL}assets/js/cartview.js"></script>
+<script type="text/javascript" src="${BASE_URL}assets/js/itemzoom.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();

@@ -13,5 +13,6 @@
 
         <mapping class="com.bohorent.shop.entity.User"/>
         <mapping class="com.bohorent.shop.entity.Items"/>
+        <mapping class="com.bohorent.shop.entity.BusinessSetting"/>
     </session-factory>
 </hibernate-configuration>

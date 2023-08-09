@@ -63,7 +63,7 @@
     <div class="footer-top">
         <div class="footer-right">
             <div class="contact-info">
-                <span>Contact: 551-271-0471</span>
+                <span>Contact: ${BSUtil.getString('contact_phone')}</span>
             </div>
             <ul class="social-icons">
                 <li><a href="https://www.tiktok.com/@bohorent"><i class="fab fa-tiktok"></i> </a></li>

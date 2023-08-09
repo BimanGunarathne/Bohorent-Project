@@ -1,5 +1,7 @@
 package com.bohorent.shop.entity;
 
+import com.bohorent.shop.util.BSUtil;
+
 import javax.persistence.*;
 
 @Entity
@@ -35,5 +37,10 @@ public class BusinessSetting extends BaseEntity{
 
     public void setValue(String value) {
         this.value = value;
+    }
+    @PostPersist
+    @PostUpdate
+    public void updateBSUtil(){
+        BSUtil.reload();
     }
 }

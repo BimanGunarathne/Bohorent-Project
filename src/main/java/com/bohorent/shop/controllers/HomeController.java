@@ -16,6 +16,7 @@ public class HomeController {
     @Route("/")
     public String index(HttpServletRequest request) {
         System.out.println("Home");
+
         return "frontend/index.jsp";
     }
 

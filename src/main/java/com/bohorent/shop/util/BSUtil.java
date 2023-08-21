@@ -1,5 +1,6 @@
 package com.bohorent.shop.util;
 
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.hibernate.Session;
 
 import java.util.HashMap;
@@ -27,6 +28,15 @@ public class BSUtil {
     }
     public static Object get(String key){
         return businessSettings.get(key);
+    }
+
+    public static String getEscape(String value){
+        return StringEscapeUtils.escapeHtml4(value);
+    }
+
+    public static String getUnescape(String key){
+        String data = getString(key);
+        return StringEscapeUtils.unescapeHtml4(data);
     }
 
     public static void reload(){

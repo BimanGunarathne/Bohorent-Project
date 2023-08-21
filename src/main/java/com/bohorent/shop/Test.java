@@ -8,7 +8,6 @@ public class Test {
     public static void main(String[] args) {
         HibernateUtil.getSessionFactory().openSession();
 //        MailService.sendMail("bimangunarathne@gmail.com", null);
-        String appName = BSUtil.getString("app_name");
-        System.out.println(appName);
+//        String appName = BSUtil.getString("app_name");
     }
 }
